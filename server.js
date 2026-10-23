@@ -974,6 +974,22 @@ const server = http.createServer(async (req, res) => {
   });
 });
 
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    const nextPort = PORT + 1;
+    console.warn(`[Server] Port ${PORT} already in use. Retrying on port ${nextPort}...`);
+    try {
+      server.listen(nextPort, () => {
+        console.log(`[Server] Dynamic fallback active: listening on http://localhost:${nextPort}`);
+      });
+    } catch (retryErr) {
+      console.error('[Server Fatal Port Collision]', retryErr);
+    }
+  } else {
+    console.error('[Server Unhandled Error]', err);
+  }
+});
+
 server.listen(PORT, () => {
   console.log('================================================================');
   console.log('  🏢 AI-DRIVEN DIGITAL TWIN — ADAPTIVE INTEROPERABILITY SERVER  ');
