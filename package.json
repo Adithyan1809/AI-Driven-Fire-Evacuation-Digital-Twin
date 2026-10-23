@@ -3,10 +3,13 @@
   "version": "2.0.0",
   "description": "AI-Driven Fire Evacuation Digital Twin with Semantic Interoperability Middleware",
   "type": "module",
-  "main": "server.js",
+  "main": "electron/main.cjs",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
+    "app": "electron electron/main.cjs",
+    "pack:win": "electron-builder --win --dir",
+    "dist:win": "electron-builder --win",
     "test": "node tests/run_tests.mjs",
     "test:reset": "node tests/test_hard_reset.mjs",
     "test:fire": "node tests/test_fire_propagation.mjs",
@@ -33,5 +36,36 @@
     "iot",
     "building-management"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "build": {
+    "appId": "com.adithyan.digitaltwin",
+    "productName": "AI Fire Evacuation Digital Twin",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "files": [
+      "server.js",
+      "index.html",
+      "app.js",
+      "package.json",
+      "build/icon.ico",
+      "build/icon.png",
+      "electron/**/*",
+      "data/**/*",
+      "modules/**/*",
+      "styles/**/*",
+      "ui/**/*"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^45.0.0",
+    "electron-builder": "^26.15.3"
+  }
 }

@@ -11,7 +11,9 @@ node_modules/
 # Build and Dist
 dist/
 dist-ssr/
-build/
+build/*
+!build/icon.ico
+!build/icon.png
 **/dist/
 
 # IDE and Editors
