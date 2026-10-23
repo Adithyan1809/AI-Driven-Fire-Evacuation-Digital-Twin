@@ -85,7 +85,7 @@ export function validateSemanticMappingRecord(mapping, {
   }
 
   // ── 1. Structural Schema Check ──
-  const targetEntity = mapping.canonical_entity || mapping.target_entity;
+  const targetEntity = mapping.canonical_entity || mapping.target_entity || mapping.canonical_space_id || mapping.space_id;
   const confidence = typeof mapping.confidence === 'number'
     ? mapping.confidence
     : (typeof mapping.entity_confidence === 'number' ? mapping.entity_confidence : 0.0);
@@ -159,8 +159,8 @@ export function validateSemanticMappingRecord(mapping, {
   result.checks.ambiguityResolved = true;
 
   // ── 6 & 7 & 8. Field, Range, and Type Validation ──
-  const field = mapping.field;
-  const value = mapping.value;
+  const field = mapping.field || mapping.canonical_metric || mapping.metric;
+  const value = mapping.value !== undefined ? mapping.value : mapping.value_mapped;
 
   if (field !== undefined) {
     const fieldRule = DT_PHYSICAL_FIELDS[field];

@@ -473,7 +473,7 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  if (pathname === '/api/buildings/switch' && req.method === 'POST') {
+  if ((pathname === '/api/buildings/switch' || pathname === '/api/building/switch') && req.method === 'POST') {
     if (!checkRateLimit(ip)) {
       res.writeHead(429, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ error: 'Rate limit exceeded', code: 'RATE_LIMIT' }));
@@ -482,7 +482,8 @@ const server = http.createServer(async (req, res) => {
 
     try {
       const payload = await readJsonBody(req, res);
-      const ok = canonicalRegistryInstance.setBuilding(payload.buildingKey);
+      const targetBuildingKey = payload.buildingKey || payload.buildingId;
+      const ok = canonicalRegistryInstance.setBuilding(targetBuildingKey);
       if (ok) {
         const removed = semanticMemory.invalidateForNewBuilding(canonicalRegistryInstance.getActiveSpaces());
         res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -906,10 +907,23 @@ const server = http.createServer(async (req, res) => {
 
     try {
       const payload = await readJsonBody(req, res);
+      const items = Array.isArray(payload) ? payload : [payload];
+
+      // Security & Prompt Injection Defense Filter
+      const injectionPattern = /ignore\s+previous|system\s+prompt|admin\s+override|<script|pwned/i;
+      for (const item of items) {
+        const textToCheck = `${item.source_entity || ''} ${item.source_system || ''} ${item.reading_type || ''}`;
+        if (injectionPattern.test(textToCheck)) {
+          res.writeHead(400, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ error: 'Security violation: Suspicious or injection payload detected', code: 'FIREWALL_REJECTED' }));
+          return;
+        }
+      }
+
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ success: true, received: Array.isArray(payload) ? payload.length : 1, timestamp: Date.now() }));
+      res.end(JSON.stringify({ success: true, received: items.length, timestamp: Date.now() }));
     } catch (err) {
-      if (err.message !== 'PAYLOAD_TOO_LARGE') {
+      if (!res.headersSent) {
         res.writeHead(400, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: 'Invalid telemetry payload.' }));
       }
@@ -951,8 +965,11 @@ const server = http.createServer(async (req, res) => {
     '.png':  'image/png',
     '.jpg':  'image/jpeg',
     '.svg':  'image/svg+xml',
-    '.ico':  'image/x-icon',
-    '.map':  'application/json',
+    '.ico':   'image/x-icon',
+    '.map':   'application/json',
+    '.woff':  'font/woff',
+    '.woff2': 'font/woff2',
+    '.ttf':   'font/ttf',
   };
 
   // Security Check 3: Only serve whitelisted web asset extensions
