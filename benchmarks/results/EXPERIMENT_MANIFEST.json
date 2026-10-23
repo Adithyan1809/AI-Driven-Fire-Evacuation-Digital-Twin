@@ -1,6 +1,6 @@
 {
   "code_version": "2.1.0-freeze",
-  "benchmark_script": "scripts/reconcile_all_experiments.mjs",
+  "benchmark_script": "benchmarks/reconcile_all_experiments.mjs",
   "dataset_version": "v2.1-audited-zero-leakage",
   "timestamp": "2026-08-30T18:43:55.455Z",
   "semantic_cases": 120,

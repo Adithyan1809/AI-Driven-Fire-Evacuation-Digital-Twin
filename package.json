@@ -7,17 +7,20 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "test": "node scripts/run_tests.mjs",
-    "test:reset": "node scripts/test_hard_reset.mjs",
-    "test:fire": "node scripts/test_fire_propagation.mjs",
-    "test:routing": "node scripts/test_deterministic_evacuation.mjs",
-    "test:building-b": "node scripts/test_building_b_generalization.mjs",
-    "test:blocked": "node scripts/test_blocked_exits_scenarios.mjs",
-    "test:custom": "node scripts/test_custom_building_adaptation.mjs",
-    "test:security": "node scripts/test_security.mjs",
-    "test:stale": "node scripts/test_stale_telemetry.mjs",
-    "test:generation": "node scripts/test_generation_id.mjs",
-    "test:values": "node scripts/test_value_ranges.mjs"
+    "test": "node tests/run_tests.mjs",
+    "test:reset": "node tests/test_hard_reset.mjs",
+    "test:fire": "node tests/test_fire_propagation.mjs",
+    "test:routing": "node tests/test_deterministic_evacuation.mjs",
+    "test:building-b": "node tests/test_building_b_generalization.mjs",
+    "test:blocked": "node tests/test_blocked_exits_scenarios.mjs",
+    "test:custom": "node tests/test_custom_building_adaptation.mjs",
+    "test:security": "node tests/test_security.mjs",
+    "test:stale": "node tests/test_stale_telemetry.mjs",
+    "test:generation": "node tests/test_generation_id.mjs",
+    "test:values": "node tests/test_value_ranges.mjs",
+    "benchmark": "node benchmarks/run_experiments.mjs",
+    "benchmark:all": "node benchmarks/run_all_benchmarks.mjs",
+    "evaluate": "node benchmarks/evaluate_ml_model.mjs"
   },
   "engines": {
     "node": ">=18.0.0"

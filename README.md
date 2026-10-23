@@ -2,13 +2,11 @@
 ### *Real-Time Predictive Hazard Forecasting, Semantic Interoperability Middleware & Deterministic Egress Optimization*
 
 [![Node.js Version](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-brightgreen.svg?style=for-the-badge&logo=node.js)](https://nodejs.org/)
-[![React Version](https://img.shields.io/badge/React-19.2.8-blue.svg?style=for-the-badge&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-8.x-646CFF.svg?style=for-the-badge&logo=vite)](https://vitejs.dev/)
-[![Gemini AI](https://img.shields.io/badge/Google_Gemini-1.5_Flash-orange.svg?style=for-the-badge&logo=google)](https://aistudio.google.com/)
-[![Tests Passing](https://img.shields.io/badge/Test_Suites-15%2F15_Passed_(100%25)-success.svg?style=for-the-badge&logo=checkmarx)](scripts/run_tests.mjs)
+[![JavaScript](https://img.shields.io/badge/ES_Modules-ES2022-F7DF1E.svg?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Google Gemini AI](https://img.shields.io/badge/Google_Gemini-1.5_Flash-orange.svg?style=for-the-badge&logo=google)](https://aistudio.google.com/)
+[![Tests Passing](https://img.shields.io/badge/Test_Suites-15%2F15_Passed_(100%25)-success.svg?style=for-the-badge&logo=checkmarx)](tests/run_tests.mjs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Publication](https://img.shields.io/badge/Paper-IEEE_Conference_Format-red.svg?style=for-the-badge&logo=ieee)](IEEE_Conference_Paper_Digital_Twin.docx)
+[![Publication](https://img.shields.io/badge/Paper-IEEE_Conference_Format-red.svg?style=for-the-badge&logo=ieee)](docs/paper/IEEE_Conference_Paper_Digital_Twin.docx)
 
 ---
 
@@ -256,7 +254,49 @@ Digital Twin/
 ├── index.html                                 # Dashboard web interface
 ├── app.js                                     # Frontend state & orchestration glue
 │
-├── modules/                                   # Core Simulation & Logic Modules
+├── benchmarks/                                # Scientific Benchmarks, Evaluations & Audits
+│   ├── run_experiments.mjs                    # Monte Carlo benchmark runner (9 Presets)
+│   ├── evaluate_ml_model.mjs                  # ML ROC-AUC, F1, and lead-time evaluator
+│   ├── run_all_benchmarks.mjs                 # Comprehensive multi-model benchmark suite
+│   ├── synthetic_dataset_generator.mjs        # Anti-leakage synthetic data generator
+│   ├── audit_deep_dive.mjs                    # Deep scientific integrity auditor
+│   ├── causal_analysis_and_divergence.mjs     # Causal route divergence analyzer
+│   └── results/                               # Empirical Results & Verification Matrices
+│       ├── CLAIM_EVIDENCE_MATRIX.md           # Scientific claims & verification audit
+│       ├── FINAL_EVACUATION_RESULTS.csv       # 300-run Monte Carlo evacuation data
+│       ├── FINAL_EVACUATION_SUMMARY.json      # Aggregated statistical comparisons
+│       ├── FINAL_GAMMA_RESULTS.json           # Sensitivity analysis across gamma weights
+│       ├── FINAL_LATENCY_RESULTS.json         # Sub-millisecond routing latency data
+│       └── unseen_schema_results.json         # Zero-shot AI generalization metrics
+│
+├── data/                                      # Canonical Ontologies & Declarative Schemas
+│   ├── buildings/                             # Declarative JSON building models
+│   ├── datasets/                              # Synthetic benchmark evaluation datasets
+│   ├── building.js                            # Default campus building topological graph
+│   ├── BuildingImporter.js                    # JSON schema parser & graph builder
+│   ├── canonicalRegistry.js                   # Authoritative building ontology registry
+│   ├── scenarioPresets.js                     # 9 reproducible hazard scenario configs
+│   └── semanticOntology.js                    # Canonical sensor & metric definitions
+│
+├── docs/                                      # Research & Technical Documentation
+│   ├── paper/                                 # Academic Research Paper
+│   │   └── IEEE_Conference_Paper_Digital_Twin.docx # Peer-reviewed IEEE conference manuscript
+│   ├── assets/                                # Diagrams & Visual Figures
+│   │   └── figure1_architecture.png           # High-resolution system architecture diagram
+│   ├── AI_SEMANTIC_ARCHITECTURE.md            # In-depth middleware design specification
+│   ├── AI_SENSOR_ARCHITECTURE.md              # Virtual IoT sensor specifications
+│   ├── BENCHMARK_METHODOLOGY.md               # Experimental protocol & ground truth
+│   ├── HARDCODING_REMEDIATION_REPORT.md       # Audit of dynamic graph decoupling
+│   └── SECURITY_AUDIT.md                      # Security audit & vulnerability remediations
+│
+├── experiments/                               # Experiment Output Artifacts & Sensitivity Logs
+│   ├── experiment_results.json                # Latest paired benchmark results
+│   ├── experiment_results.csv                 # Tabular evacuation output
+│   ├── ablation_study.json                    # 3-way routing ablation data
+│   ├── horizon_sensitivity.json               # Prediction horizon sweeps (5s-30s)
+│   └── hysteresis_sensitivity.json            # Route stability sweeps (10%-30%)
+│
+├── modules/                                   # Core Simulation & Domain Engines
 │   ├── aiSemanticMapper.js                    # Google Gemini LLM zero-shot inference
 │   ├── aiSemanticService.js                   # Semantic orchestration & API management
 │   ├── buildingGraph.js                       # Graph representation & topological search
@@ -274,53 +314,53 @@ Digital Twin/
 │   ├── telemetrySequencer.js                  # Generation sequence validation & order
 │   └── validationLayer.js                     # 9-point deterministic safety firewall
 │
-├── client/                                    # Modern React 19 Frontend Client
-│   ├── src/                                   # TypeScript React components & hooks
-│   ├── package.json                           # Vite, Tailwind CSS, Radix UI, Recharts
-│   └── vite.config.ts                         # Modern Vite build configuration
-│
-├── data/                                      # Data Models & Schemas
-│   ├── buildings/                             # Declarative JSON building models
-│   ├── datasets/                              # Synthetic benchmark evaluation datasets
-│   ├── building.js                            # Default campus building topological graph
-│   ├── BuildingImporter.js                    # JSON schema parser & graph builder
-│   ├── canonicalRegistry.js                   # Authoritative building ontology registry
-│   ├── scenarioPresets.js                     # 9 reproducible hazard scenario configs
-│   └── semanticOntology.js                    # Canonical sensor & metric definitions
-│
-├── benchmarks/results/                        # Empirical Evaluation & Audit Records
-│   ├── CLAIM_EVIDENCE_MATRIX.md               # Scientific claims & verification audit
-│   ├── FINAL_EVACUATION_RESULTS.csv           # 300-run Monte Carlo evacuation data
-│   ├── FINAL_EVACUATION_SUMMARY.json          # Aggregated statistical comparisons
-│   ├── FINAL_GAMMA_RESULTS.json               # Sensitivity analysis across gamma weights
-│   ├── FINAL_LATENCY_RESULTS.json             # Sub-millisecond routing latency data
-│   └── unseen_schema_results.json             # Zero-shot AI generalization metrics
-│
-├── docs/                                      # Research & Technical Documentation
-│   ├── AI_SEMANTIC_ARCHITECTURE.md            # In-depth middleware design specification
-│   ├── AI_SENSOR_ARCHITECTURE.md              # Virtual IoT sensor specifications
-│   ├── BENCHMARK_METHODOLOGY.md               # Experimental protocol & ground truth
-│   ├── HARDCODING_REMEDIATION_REPORT.md       # Audit of dynamic graph decoupling
-│   └── SECURITY_AUDIT.md                      # Security audit & vulnerability remediations
-│
-├── scripts/                                   # Automated Test & Benchmark Suites
-│   ├── run_tests.mjs                          # Master runner for all 15 test suites
-│   ├── run_experiments.mjs                    # Monte Carlo benchmark runner
-│   ├── evaluate_ml_model.mjs                  # ML ROC-AUC, F1, and lead-time evaluator
-│   ├── synthetic_dataset_generator.mjs        # Anti-leakage synthetic data generator
-│   └── test_*.mjs                             # 15 individual automated test suites
-│
-├── styles/                                    # Interface Styling & Animations
+├── styles/                                    # Frontend Themes & CSS Styling
 │   ├── main.css                               # Core styling & glassmorphism theme
 │   ├── floorplan.css                          # SVG rendering, heatmaps, and zones
-│   └── panels.css                             # Metrics panels, telemetry charts, tables
+│   ├── panels.css                             # Metrics panels, telemetry charts, tables
+│   └── animations.css                         # Transition effects & hazard pulse animations
 │
-└── ui/                                        # Modular Dashboard UI Components
-    ├── aiLabPage.js                           # AI translation test sandbox
-    ├── benchmarkPage.js                       # Live benchmark execution dashboard
-    ├── floorPlanRenderer.js                   # 2D SVG dynamic rendering engine
-    ├── sensorFleetPage.js                     # Sensor fleet monitoring interface
-    └── scenarioBuilderModal.js                # Custom fire & hazard injection modal
+├── tests/                                     # Automated Verification & Test Battery
+│   ├── run_tests.mjs                          # Master test runner (15 test suites)
+│   ├── test_security.mjs                      # Security, path traversal & input sanitization
+│   ├── test_stale_telemetry.mjs               # Sensor staleness & timeout handling
+│   ├── test_generation_id.mjs                 # Telemetry sequencing & replay prevention
+│   ├── test_value_ranges.mjs                  # Sensor value boundary & clamping validation
+│   ├── test_ml_hazard.mjs                     # ML hazard model inference & scoring
+│   ├── test_predictive_evacuation_e2e.mjs     # End-to-end predictive egress test
+│   ├── test_ml_adversarial_cases.mjs          # Adversarial input handling
+│   ├── test_parameter_sensitivity.mjs         # Sensitivity sweep validation
+│   ├── test_tenability_and_paths.mjs          # Tenability criteria & path verification
+│   ├── test_deep_complex_scenarios.mjs        # Complex multi-floor fire simulations
+│   ├── test_hard_reset.mjs                    # State reset & re-initialization integrity
+│   ├── test_fire_propagation.mjs              # NFPA 72 fire spread physics
+│   ├── test_deterministic_evacuation.mjs      # Deterministic graph route assertions
+│   ├── test_building_b_generalization.mjs     # Multi-facility topology generalization
+│   └── test_blocked_exits_scenarios.mjs       # Blocked exit safety fallbacks
+│
+├── tools/                                     # Offline Tools & Service Utilities
+│   ├── ml_hazard_service.py                   # Offline GBDT reference service
+│   ├── generate_true_two_column_ieee.py       # IEEE manuscript document generator
+│   └── generate_figure1_diagram.py            # High-res architecture diagram generator
+│
+├── ui/                                        # Modular Web Dashboard Components
+│   ├── floorPlanRenderer.js                   # High-performance 2D SVG renderer
+│   ├── sensorFleetPage.js                     # Sensor fleet monitoring interface
+│   ├── aiLabPage.js                           # AI translation & firewall inspector
+│   ├── benchmarkPage.js                       # Real-time benchmark execution dashboard
+│   ├── controls.js                            # Simulation playback & speed controls
+│   ├── configModal.js                         # Runtime parameter configuration modal
+│   ├── scenarioBuilderModal.js                # Custom fire & hazard injection modal
+│   └── ...                                    # Additional modals & panel controllers
+│
+├── .env.example                               # Environment variable blueprint
+├── .gitignore                                 # Clean version control exclusions
+├── index.html                                 # Dashboard web application entrypoint
+├── app.js                                     # Frontend state & orchestration master
+├── server.js                                  # HTTP & WebSocket simulation server
+├── package.json                               # Dependencies & npm scripts
+├── start.bat                                  # Windows double-click launcher
+└── start.ps1                                  # PowerShell launcher
 ```
 
 ---
@@ -330,7 +370,7 @@ Digital Twin/
 ### Prerequisites
 - **Node.js**: `v18.0.0` or higher
 - **npm**: `v9.0.0` or higher
-- **Optional**: Python `3.10+` for offline scikit-learn training (`scripts/ml_hazard_service.py`)
+- **Optional**: Python `3.10+` for offline scikit-learn training (`tools/ml_hazard_service.py`)
 
 ### 1. Clone the Repository
 ```bash
@@ -351,17 +391,28 @@ PORT=8080
 GEMINI_MODEL=gemini-1.5-flash
 ```
 
-### 3. Launch Core Application Server
+### 3. Launch Application Server
 ```bash
 npm start
+# or: node server.js
 ```
 *Application server will initialize at: **`http://localhost:8080`***
 
-### 4. (Optional) Launch Modern React Client
+### 4. Run Automated Test Suite (15 Test Suites)
 ```bash
-cd client
-npm install
-npm run dev
+npm test
+```
+
+### 5. Run Scientific Benchmark & Ablation Suite
+```bash
+npm run benchmark
+# or: node benchmarks/run_experiments.mjs
+```
+
+### 6. Run Machine Learning Model Evaluation
+```bash
+npm run evaluate
+# or: node benchmarks/evaluate_ml_model.mjs
 ```
 
 ---
@@ -379,21 +430,21 @@ npm test
 ================================================================
   🧪 FIRE EVACUATION DIGITAL TWIN — FULL TEST SUITE RUNNER      
 ================================================================
-✓ [PASSED] scripts/test_security.mjs                         (85ms)
-✓ [PASSED] scripts/test_stale_telemetry.mjs                  (57ms)
-✓ [PASSED] scripts/test_generation_id.mjs                    (106ms)
-✓ [PASSED] scripts/test_value_ranges.mjs                     (55ms)
-✓ [PASSED] scripts/test_ml_hazard.mjs                        (59ms)
-✓ [PASSED] scripts/test_predictive_evacuation_e2e.mjs        (95ms)
-✓ [PASSED] scripts/test_ml_adversarial_cases.mjs             (113ms)
-✓ [PASSED] scripts/test_parameter_sensitivity.mjs            (63ms)
-✓ [PASSED] scripts/test_tenability_and_paths.mjs             (66ms)
-✓ [PASSED] scripts/test_deep_complex_scenarios.mjs          (1346ms)
-✓ [PASSED] scripts/test_hard_reset.mjs                       (90ms)
-✓ [PASSED] scripts/test_fire_propagation.mjs                (8123ms)
-✓ [PASSED] scripts/test_deterministic_evacuation.mjs         (125ms)
-✓ [PASSED] scripts/test_building_b_generalization.mjs        (67ms)
-✓ [PASSED] scripts/test_blocked_exits_scenarios.mjs          (75ms)
+✓ [PASSED] tests/test_security.mjs                           (77ms)
+✓ [PASSED] tests/test_stale_telemetry.mjs                    (92ms)
+✓ [PASSED] tests/test_generation_id.mjs                     (175ms)
+✓ [PASSED] tests/test_value_ranges.mjs                       (88ms)
+✓ [PASSED] tests/test_ml_hazard.mjs                         (107ms)
+✓ [PASSED] tests/test_predictive_evacuation_e2e.mjs         (123ms)
+✓ [PASSED] tests/test_ml_adversarial_cases.mjs              (139ms)
+✓ [PASSED] tests/test_parameter_sensitivity.mjs              (90ms)
+✓ [PASSED] tests/test_tenability_and_paths.mjs              (107ms)
+✓ [PASSED] tests/test_deep_complex_scenarios.mjs           (1965ms)
+✓ [PASSED] tests/test_hard_reset.mjs                        (152ms)
+✓ [PASSED] tests/test_fire_propagation.mjs                 (8212ms)
+✓ [PASSED] tests/test_deterministic_evacuation.mjs          (148ms)
+✓ [PASSED] tests/test_building_b_generalization.mjs         (93ms)
+✓ [PASSED] tests/test_blocked_exits_scenarios.mjs           (85ms)
 ================================================================
   📊 Total Test Suites: 15 | Passed: 15 | Failed: 0 (100.0%)
 ================================================================
@@ -402,10 +453,10 @@ npm test
 ### Running Experimental Benchmarks & ML Verification
 ```bash
 # Run the 9-scenario paired Monte Carlo evacuation benchmarks
-node scripts/run_experiments.mjs
+node benchmarks/run_experiments.mjs
 
 # Run the ML hazard predictor evaluation on unseen datasets
-node scripts/evaluate_ml_model.mjs
+node benchmarks/evaluate_ml_model.mjs
 ```
 
 ---

@@ -1,4 +1,4 @@
-# scripts/generate_figure1_diagram.py
+# tools/generate_figure1_diagram.py
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
@@ -134,7 +134,7 @@ def generate_figure1():
     draw_arrow(81, 17, 81, 23, label="Real-Time Egress Waypoints", label_side='right', label_color=c_green, ls='--')
 
     plt.tight_layout()
-    plt.savefig('figure1_architecture.png', dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')), 'docs', 'assets', 'figure1_architecture.png'), dpi=300, bbox_inches='tight')
     plt.close()
     print("SUCCESS: High-resolution figure1_architecture.png generated successfully.")
 
@@ -274,7 +274,7 @@ def generate_figure1():
     draw_arrow(81, 18, 81, 23, label="Real-Time Egress Waypoints", label_side='right', label_color=c_green, ls='--')
 
     plt.tight_layout()
-    plt.savefig('figure1_architecture.png', dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')), 'docs', 'assets', 'figure1_architecture.png'), dpi=300, bbox_inches='tight')
     plt.close()
     print("SUCCESS: figure1_architecture.png generated successfully.")
 

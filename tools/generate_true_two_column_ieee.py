@@ -1,4 +1,4 @@
-# scripts/generate_true_two_column_ieee.py
+# tools/generate_true_two_column_ieee.py
 import os
 import docx
 from docx.shared import Inches, Pt, RGBColor
@@ -973,7 +973,7 @@ def build_ieee_manuscript():
         r_run.font.name = 'Times New Roman'
         r_run.font.size = Pt(8.0)
 
-    target_path = 'IEEE_Conference_Paper_Digital_Twin.docx'
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..')); target_path = os.path.join(project_root, 'docs', 'paper', 'IEEE_Conference_Paper_Digital_Twin.docx')
     doc.save(target_path)
     print(f"SUCCESS: Saved to {target_path}")
     

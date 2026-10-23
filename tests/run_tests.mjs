@@ -13,21 +13,21 @@ const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
 
 const TEST_FILES = [
-  'scripts/test_security.mjs',
-  'scripts/test_stale_telemetry.mjs',
-  'scripts/test_generation_id.mjs',
-  'scripts/test_value_ranges.mjs',
-  'scripts/test_ml_hazard.mjs',
-  'scripts/test_predictive_evacuation_e2e.mjs',
-  'scripts/test_ml_adversarial_cases.mjs',
-  'scripts/test_parameter_sensitivity.mjs',
-  'scripts/test_tenability_and_paths.mjs',
-  'scripts/test_deep_complex_scenarios.mjs',
-  'scripts/test_hard_reset.mjs',
-  'scripts/test_fire_propagation.mjs',
-  'scripts/test_deterministic_evacuation.mjs',
-  'scripts/test_building_b_generalization.mjs',
-  'scripts/test_blocked_exits_scenarios.mjs',
+  'tests/test_security.mjs',
+  'tests/test_stale_telemetry.mjs',
+  'tests/test_generation_id.mjs',
+  'tests/test_value_ranges.mjs',
+  'tests/test_ml_hazard.mjs',
+  'tests/test_predictive_evacuation_e2e.mjs',
+  'tests/test_ml_adversarial_cases.mjs',
+  'tests/test_parameter_sensitivity.mjs',
+  'tests/test_tenability_and_paths.mjs',
+  'tests/test_deep_complex_scenarios.mjs',
+  'tests/test_hard_reset.mjs',
+  'tests/test_fire_propagation.mjs',
+  'tests/test_deterministic_evacuation.mjs',
+  'tests/test_building_b_generalization.mjs',
+  'tests/test_blocked_exits_scenarios.mjs',
 ];
 
 console.log('================================================================');

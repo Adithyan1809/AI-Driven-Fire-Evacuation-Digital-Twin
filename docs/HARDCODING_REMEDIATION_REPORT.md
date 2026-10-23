@@ -4,12 +4,12 @@
 
 | File | Line | Value | Classification |
 |---|---|---|---|
-| `scripts/run_all_experiments_verified.mjs` | Multiple | `ROOM_101` / `JUNC_101` | INTENTIONAL (Test definitions) |
-| `scripts/test_deterministic_evacuation.mjs` | Multiple | `ROOM_101` / `JUNC_101` | INTENTIONAL (Test scripts) |
-| `scripts/test_fire_propagation.mjs` | 30, 52, 53 | `ROOM_101` | INTENTIONAL (Test scripts) |
-| `scripts/test_gamma_sensitivity.mjs` | 62, 63, 86, 87 | `ROOM_101` / `JUNC_101` | INTENTIONAL (Test scripts) |
-| `scripts/test_model_quotas.mjs` | 22 | `ROOM_101` | INTENTIONAL (Test scripts) |
-| `scripts/verify_gap_c.mjs` | Multiple | `ROOM_101` | INTENTIONAL (Test definitions) |
+| `benchmarks/run_all_experiments_verified.mjs` | Multiple | `ROOM_101` / `JUNC_101` | INTENTIONAL (Test definitions) |
+| `tests/test_deterministic_evacuation.mjs` | Multiple | `ROOM_101` / `JUNC_101` | INTENTIONAL (Test scripts) |
+| `tests/test_fire_propagation.mjs` | 30, 52, 53 | `ROOM_101` | INTENTIONAL (Test scripts) |
+| `tests/test_gamma_sensitivity.mjs` | 62, 63, 86, 87 | `ROOM_101` / `JUNC_101` | INTENTIONAL (Test scripts) |
+| `tests/test_model_quotas.mjs` | 22 | `ROOM_101` | INTENTIONAL (Test scripts) |
+| `tests/verify_gap_c.mjs` | Multiple | `ROOM_101` | INTENTIONAL (Test definitions) |
 | `ui/configModal.js` | Multiple | `ROOM_101` / `TEST_` keys | INTENTIONAL (UI examples) |
 | `ui/dtStatePanel.js` | 28, 253 | `ROOM_101` | RESIDUAL_BUG (Default selection) |
 | `ui/eventLog.js` | 125 | `ROOM_101` | RESIDUAL_BUG (UI conditional logic) |

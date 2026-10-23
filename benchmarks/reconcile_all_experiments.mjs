@@ -1,4 +1,4 @@
-// scripts/reconcile_all_experiments.mjs
+// benchmarks/reconcile_all_experiments.mjs
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -328,7 +328,7 @@ fs.writeFileSync(path.join(RESULTS_DIR, 'FINAL_LATENCY_RESULTS.json'), JSON.stri
 // ── MANIFEST & DOCUMENTATION ──────────────────────────────────
 const manifest = {
   code_version: "2.1.0-freeze",
-  benchmark_script: "scripts/reconcile_all_experiments.mjs",
+  benchmark_script: "benchmarks/reconcile_all_experiments.mjs",
   dataset_version: "v2.1-audited-zero-leakage",
   timestamp: new Date().toISOString(),
   semantic_cases: 120,
