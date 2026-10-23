@@ -334,7 +334,7 @@ Digital Twin/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/adithyan18902005/AI-Driven-Fire-Evacuation-Digital-Twin.git
+git clone https://github.com/Adithyan1809/AI-Driven-Fire-Evacuation-Digital-Twin.git
 cd AI-Driven-Fire-Evacuation-Digital-Twin
 ```
 
