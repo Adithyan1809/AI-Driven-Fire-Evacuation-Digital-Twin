@@ -38,6 +38,7 @@
   ],
   "license": "MIT",
   "build": {
+    "asar": false,
     "appId": "com.adithyan.digitaltwin",
     "productName": "AI Fire Evacuation Digital Twin",
     "directories": {

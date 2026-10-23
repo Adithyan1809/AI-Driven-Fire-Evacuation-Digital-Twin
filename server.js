@@ -444,7 +444,7 @@ const server = http.createServer(async (req, res) => {
   const ip = req.socket.remoteAddress || 'unknown';
 
   // ── 1. Health Status ────────────────────────────────────
-  if (pathname === '/api/health' && req.method === 'GET') {
+  if ((pathname === '/health' || pathname === '/api/health') && req.method === 'GET') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({
       status: 'ok',

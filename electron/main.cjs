@@ -67,7 +67,7 @@ function checkServerHealth(url, maxAttempts = 15, interval = 200) {
     let attempts = 0;
     const test = () => {
       attempts++;
-      const req = http.get(`${url}/health`, (res) => {
+      const req = http.get(`${url}/api/health`, (res) => {
         if (res.statusCode === 200) {
           resolve(true);
         } else if (attempts < maxAttempts) {
@@ -303,6 +303,14 @@ async function createWindow() {
     mainWindow.show();
     mainWindow.focus();
   });
+
+  // Guarantee window is shown even if ready-to-show is delayed
+  setTimeout(() => {
+    if (mainWindow && !mainWindow.isVisible()) {
+      mainWindow.show();
+      mainWindow.focus();
+    }
+  }, 1200);
 
   mainWindow.on('closed', () => {
     mainWindow = null;
