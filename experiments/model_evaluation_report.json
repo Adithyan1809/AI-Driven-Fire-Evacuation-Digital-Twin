@@ -1,0 +1,31 @@
+{
+  "model_architecture": "Calibrated Tabular Logit-Sigmoid Predictive Hazard Engine (Runtime)",
+  "prediction_horizon_seconds": 15,
+  "evaluation_split": "Unseen Test Scenarios 26-35 (Zero Temporal Leakage)",
+  "test_sample_count": 3304,
+  "metrics": {
+    "accuracy": 0.9431,
+    "precision": 0.9969,
+    "recall": 0.9343,
+    "f1_score": 0.9646,
+    "roc_auc": 0.9784,
+    "false_negative_rate": 0.0657
+  },
+  "confusion_matrix": {
+    "true_negatives": 556,
+    "false_positives": 8,
+    "false_negatives": 180,
+    "true_positives": 2560
+  },
+  "lead_time_seconds": {
+    "sample_count": 54,
+    "mean": 9.39,
+    "median": 12,
+    "min": 1,
+    "max": 19
+  },
+  "safety_boundary_audit": {
+    "advisory_only": true,
+    "hard_safety_override": "PROHIBITED — Deterministic safety rules maintain authoritative control over BLOCKED states (+Infinity)."
+  }
+}

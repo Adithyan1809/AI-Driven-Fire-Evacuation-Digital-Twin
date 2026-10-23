@@ -1,0 +1,47 @@
+[
+  {
+    "gamma": 1.5,
+    "degradedEdgeWeight": 4.5,
+    "selectedRoute": "ROOM_102 -> JUNC_102 -> JUNC_101 -> JUNC_E -> EXIT_EAST",
+    "meanEvacuationTimeS": 19.1,
+    "unsafeOccupantCount": 20.4,
+    "meanRouteRecalculations": 3,
+    "successRatePct": 100
+  },
+  {
+    "gamma": 2,
+    "degradedEdgeWeight": 5,
+    "selectedRoute": "ROOM_102 -> JUNC_102 -> JUNC_103 -> ROOM_103 -> EXIT_NORTH_103",
+    "meanEvacuationTimeS": 19.1,
+    "unsafeOccupantCount": 20.4,
+    "meanRouteRecalculations": 3,
+    "successRatePct": 100
+  },
+  {
+    "gamma": 2.5,
+    "degradedEdgeWeight": 5.5,
+    "selectedRoute": "ROOM_102 -> JUNC_102 -> JUNC_103 -> ROOM_103 -> EXIT_NORTH_103",
+    "meanEvacuationTimeS": 19.1,
+    "unsafeOccupantCount": 20.4,
+    "meanRouteRecalculations": 3,
+    "successRatePct": 100
+  },
+  {
+    "gamma": 3.5,
+    "degradedEdgeWeight": 6.5,
+    "selectedRoute": "ROOM_102 -> JUNC_102 -> JUNC_103 -> ROOM_103 -> EXIT_NORTH_103",
+    "meanEvacuationTimeS": 15.1,
+    "unsafeOccupantCount": 6,
+    "meanRouteRecalculations": 3,
+    "successRatePct": 100
+  },
+  {
+    "gamma": 5,
+    "degradedEdgeWeight": 8,
+    "selectedRoute": "ROOM_102 -> JUNC_102 -> JUNC_103 -> ROOM_103 -> EXIT_NORTH_103",
+    "meanEvacuationTimeS": 15.1,
+    "unsafeOccupantCount": 6,
+    "meanRouteRecalculations": 3,
+    "successRatePct": 100
+  }
+]

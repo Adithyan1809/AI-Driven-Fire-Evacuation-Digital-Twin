@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Driven Digital Twin — Emergency Evacuation</title>
+  <link rel="stylesheet" href="styles/main.css?v=3.0">
+  <link rel="stylesheet" href="styles/panels.css?v=3.0">
+  <link rel="stylesheet" href="styles/floorplan.css?v=3.0">
+  <link rel="stylesheet" href="styles/animations.css?v=3.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap">
+</head>
+<body class="demo-mode-active">
+
+<div id="app">
+
+  <!-- ═══════════════════════════════════════════════
+       HEADER & NAVIGATION
+  ════════════════════════════════════════════════════ -->
+  <header id="app-header">
+
+    <!-- Brand mark -->
+    <div class="header-brand">
+      <span class="brand-badge">DT</span>
+      <span class="brand-name">Digital Twin</span>
+    </div>
+
+    <!-- Primary nav — segmented pill tabs -->
+    <nav class="header-nav-tabs" role="tablist">
+      <button id="tab-live-twin" class="nav-tab active" role="tab" title="Live Operations & Evacuation Floor Plan">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Twin
+      </button>
+      <button id="tab-sensor-fleet" class="nav-tab" role="tab" title="Virtual IoT Sensors Fleet">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg>
+        Sensors
+      </button>
+      <button id="tab-ai-lab" class="nav-tab" role="tab" title="Zero-Shot AI Semantic Interoperability & Safety Firewall">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
+        Intelligence
+      </button>
+      <button id="tab-benchmarks" class="nav-tab" role="tab" title="Research Evaluation & Empirical Benchmarks">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        Benchmarks
+      </button>
+    </nav>
+
+    <!-- Right cluster: building + occupancy + status + clock + utility -->
+    <div class="header-end">
+
+      <div class="header-meta">
+        <div class="meta-item">
+          <span class="meta-label">Building</span>
+          <span class="meta-value" id="bld-name-header">Engineering Dept.</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Occupancy</span>
+          <div class="meta-occupancy">
+            <span class="meta-value count" id="occ-badge">50</span>
+            <span class="meta-sub" id="occ-sub-badge">0 evac · 50 rem</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Status badge — uses new .status-pill class -->
+      <div id="status-badge" class="status-badge" data-status="idle">
+        <div id="status-dot" class="dot"></div>
+        <span id="status-label">Standby</span>
+      </div>
+
+      <!-- Simulation Clock -->
+      <div class="sim-clock" id="sim-clock">00.0s</div>
+
+      <!-- Utility menu (Tour · Settings · Architect · Mode toggle) -->
+      <div class="utility-menu-wrap">
+        <button id="btn-utility-menu" class="icon-btn" title="More options" aria-label="More options" aria-expanded="false">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+        </button>
+        <div id="utility-dropdown" class="utility-dropdown hidden" role="menu">
+          <button id="btn-pres-mode-menu" class="utility-dropdown-item" role="menuitem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            Presentation Mode (P)
+          </button>
+          <button id="btn-guided-tour-open" class="utility-dropdown-item" role="menuitem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Tour
+          </button>
+          <button id="btn-cfg-open" class="utility-dropdown-item" role="menuitem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Settings
+          </button>
+          <button id="btn-architect-open" class="utility-dropdown-item" role="menuitem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><line x1="18" y1="20" x2="18" y2="4"/><path d="M6 20V8a2 2 0 0 1 2-2h10"/><path d="M6 14h8"/></svg>
+            Architect
+          </button>
+          <div class="utility-separator"></div>
+          <div class="utility-mode-group">
+            <span class="utility-mode-label">Mode</span>
+            <div class="mode-toggle-group">
+              <button id="btn-mode-demo" class="btn-mode active" title="Demonstration Mode (Paced)">Demo</button>
+              <button id="btn-mode-realtime" class="btn-mode" title="Real-Time Mode (Instant)">Real-Time</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Fire alert banner (dynamically shown/hidden by controls.js) -->
+  <div id="fire-alert-banner" aria-live="assertive"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       MAIN VIEW CONTAINER (Tab-switched)
+  ════════════════════════════════════════════════════ -->
+  <main id="main-view-container">
+
+    <!-- ── VIEW 1: LIVE TWIN (Digital Twin is Hero) ────── -->
+    <div id="view-live-twin" class="app-view active">
+
+      <!-- Panel left: Space Inspector (overlay, slides in) -->
+      <div id="panel-left">
+        <div class="panel-header">
+          <h3>Space Inspector</h3>
+          <span class="badge badge-cyan">TELEMETRY</span>
+        </div>
+        <div class="panel-body no-padding" id="dt-panel-body"></div>
+      </div>
+
+      <!-- Panel left toggle (floating left edge button) -->
+      <button id="btn-panel-left-toggle" class="panel-toggle panel-toggle-left" aria-label="Inspector panel" title="Space Inspector">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <!-- Centre: 2D Floor Plan Hero -->
+      <div id="panel-centre">
+
+        <!-- Compact floor plan header bar -->
+        <div id="floor-plan-header">
+          <div class="fp-header-left">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="color:var(--text-muted);flex-shrink:0"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="fp-building-name" id="bld-name-floorplan">Engineering Dept.</span>
+            <span class="live-indicator"><span class="live-dot"></span>LIVE</span>
+          </div>
+          <div class="fp-header-center" id="center-evac-summary">
+            <span class="fp-evac-stat"><strong>0</strong><span class="fp-evac-lbl">Evac</span></span>
+            <span class="fp-evac-divider"></span>
+            <span class="fp-evac-stat"><strong>50</strong><span class="fp-evac-lbl">Active</span></span>
+            <span class="fp-evac-divider"></span>
+            <span class="fp-evac-stat"><strong>0</strong><span class="fp-evac-lbl">Trapped</span></span>
+          </div>
+          <div class="legend fp-legend">
+            <div class="legend-item"><div class="legend-dot" style="background:#0e131d;border:1px solid rgba(255,255,255,0.18)"></div><span>Normal</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#2a1a08;border:1px solid var(--accent-amber)"></div><span>Warning</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#2d080c;border:1px solid var(--accent-red)"></div><span>Critical</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--accent-cyan);border-radius:50%"></div><span>Idle</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--accent-amber);border-radius:50%"></div><span>Moving</span></div>
+            <div class="legend-item" style="margin-left:4px"><div style="width:14px;height:2px;background:var(--accent-green);border-radius:1px"></div><span>Route</span></div>
+          </div>
+        </div>
+
+        <!-- Floating floor plan toolbar (top-right corner) -->
+        <div id="floorplan-toolbar" aria-label="Floor plan tools">
+          <button id="btn-presentation-mode-toggle" class="fp-tool-btn" title="Presentation Mode (P) — Cinematic Fullscreen View">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+          </button>
+          <button id="btn-architect-tool-open" class="fp-tool-btn" title="Custom Architect — Design or Import any Floor Plan">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><line x1="18" y1="20" x2="18" y2="4"/><path d="M6 20V8a2 2 0 0 1 2-2h10"/><path d="M6 14h8"/></svg>
+          </button>
+          <button id="btn-ignite-tool" class="fp-tool-btn" title="Click-to-Ignite — Click any room to spark a fire (Shift+Click for multi-origin)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          </button>
+          <button id="btn-spread-controls-toggle" class="fp-tool-btn" title="Spread Physics — Adjust fire spread rate & smoke penetration">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M5 12H2m20 0h-3M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/><circle cx="12" cy="12" r="4"/></svg>
+          </button>
+        </div>
+
+        <!-- Ignite tool label (hidden element, needed by controls.js) -->
+        <span id="ignite-tool-label" style="display:none">Click-to-Ignite</span>
+        <!-- Spread toggle arrow (hidden, needed by controls.js) -->
+        <span id="spread-toggle-arrow" style="display:none">▾</span>
+
+        <!-- Real-Time Spread Physics Control Bar -->
+        <div id="spread-controls-panel" class="spread-controls-toolbar" style="display:none;">
+          <div class="spread-ctrl-group">
+            <span class="spread-ctrl-label">SPREAD SPEED:</span>
+            <div class="spread-presets">
+              <button class="btn btn-spread-preset" data-mult="0.5">0.5× Smolder</button>
+              <button class="btn btn-spread-preset active" data-mult="1.0">1.0× Normal</button>
+              <button class="btn btn-spread-preset" data-mult="2.5">2.5× Flashover</button>
+              <button class="btn btn-spread-preset" data-mult="5.0">5.0× Extreme</button>
+            </div>
+            <input type="range" id="slider-spread-rate" min="0.2" max="5.0" step="0.1" value="1.0" class="spread-slider" title="Spread rate multiplier">
+            <span id="label-spread-rate" class="spread-val-badge">1.0×</span>
+          </div>
+
+          <div class="spread-divider"></div>
+
+          <div class="spread-ctrl-group">
+            <span class="spread-ctrl-label">SMOKE PENETRATION:</span>
+            <input type="range" id="slider-smoke-convection" min="0.1" max="0.9" step="0.05" value="0.4" class="spread-slider" title="Convective smoke transfer factor">
+            <span id="label-smoke-convection" class="spread-val-badge">40%</span>
+          </div>
+
+          <div class="spread-divider"></div>
+
+          <div class="spread-ctrl-group spread-origins-group">
+            <span class="spread-ctrl-label">ORIGINS:</span>
+            <div id="active-fire-chips" class="active-fire-chips">
+              <span class="fire-chip active">ROOM_101</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Ignition Mode HUD Banner -->
+        <div id="ignite-hud-banner" class="ignite-hud-banner" style="display:none;">
+          <span class="ignite-hud-dot"></span>
+          <span><strong>IGNITION MODE ACTIVE</strong> — Click any room to spark fire · Hold <kbd>Shift</kbd> for multi-point ignition</span>
+          <button id="btn-ignite-hud-close" class="btn-ignite-hud-close" title="Exit ignition mode">✕</button>
+        </div>
+
+        <!-- SVG Floor Plan -->
+        <div id="floor-plan-container">
+          <svg id="floor-plan-svg" xmlns="http://www.w3.org/2000/svg">
+            <!-- Rendered by FloorPlanRenderer -->
+          </svg>
+        </div>
+
+        <!-- Results overlay (no more inline styles) -->
+        <div id="results-panel" class="results-panel-overlay"></div>
+
+        <!-- Panel backdrop (click to close panels on narrow screens) -->
+        <div id="panel-backdrop" class="panel-backdrop"></div>
+      </div>
+
+      <!-- Panel right toggle (floating right edge button) -->
+      <button id="btn-panel-right-toggle" class="panel-toggle panel-toggle-right" aria-label="AI & Timeline panel" title="AI Middleware & Timeline">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <!-- Panel right: AI Semantic Middleware & Event Timeline (overlay) -->
+      <div id="panel-right">
+        <!-- Semantic Middleware (Top Section) -->
+        <div class="panel-section panel-section-mw">
+          <div class="panel-header">
+            <div style="display:flex;align-items:center;gap:6px;">
+              <h3>AI Middleware</h3>
+              <span class="badge badge-purple">ZERO-SHOT</span>
+            </div>
+            <button id="btn-mw-audit-header" class="btn btn-header-audit" title="View Ingestion Telemetry Stream">
+              AUDIT (<span id="hdr-audit-count">0</span>)
+            </button>
+          </div>
+          <div class="panel-body no-padding" id="middleware-panel-body"></div>
+        </div>
+
+        <!-- Event Timeline (Bottom Section) -->
+        <div class="panel-section panel-section-timeline">
+          <div class="panel-header">
+            <div style="display:flex;align-items:center;gap:6px;">
+              <h3>Incident Timeline</h3>
+              <span class="badge badge-blue" id="timeline-status-badge">REAL-TIME</span>
+            </div>
+            <div id="timeline-counter" class="text-micro">0 events</div>
+          </div>
+          <div class="panel-body no-padding" id="event-log-body"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── VIEW 2: SENSOR FLEET (Dedicated Page) ────── -->
+    <div id="view-sensor-fleet" class="app-view" style="display:none;"></div>
+
+    <!-- ── VIEW 3: AI SEMANTIC LAB (Dedicated Page) ─── -->
+    <div id="view-ai-lab" class="app-view" style="display:none;"></div>
+
+    <!-- ── VIEW 4: BENCHMARKS & RESEARCH (Dedicated Page) -->
+    <div id="view-benchmarks" class="app-view" style="display:none;"></div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       CONTROLS BAR (simplified — primary actions only)
+  ════════════════════════════════════════════════════ -->
+  <div id="controls-bar">
+
+    <!-- Primary playback -->
+    <div class="controls-left">
+      <div class="btn-group">
+        <button id="btn-start" class="btn btn-start">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Start
+        </button>
+        <button id="btn-pause" class="btn btn-pause" disabled>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          Pause
+        </button>
+        <button id="btn-step-next" class="btn btn-step">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="5 12 12 5 19 12"/><polyline points="5 19 12 12 19 19"/></svg>
+          Step
+        </button>
+        <button id="btn-reset" class="btn btn-reset" disabled>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <!-- Scenario selector -->
+    <div class="controls-left" style="gap:6px;">
+      <span class="text-micro" style="white-space:nowrap">Scenario</span>
+      <select id="scenario-select" class="scenario-dropdown" title="Select Fire Origin & Emergency Scenario">
+        <optgroup label="Single Room Fire">
+          <option value="ROOM_101">Room 101 — Classroom</option>
+          <option value="ROOM_102">Room 102 — Classroom</option>
+          <option value="ROOM_103">Room 103 — Classroom</option>
+          <option value="STAFF_ROOM">Staff Room</option>
+          <option value="DEPT_OFFICE">Department Office</option>
+          <option value="HOD_CABIN_1">HOD Cabin 1</option>
+          <option value="HOD_CABIN_2">HOD Cabin 2</option>
+        </optgroup>
+        <optgroup label="Multi-Room Fires">
+          <option value="MULTI:ROOM_101,STAFF_ROOM">Dual: Room 101 + Staff Room</option>
+          <option value="MULTI:ROOM_102,DEPT_OFFICE">Dual: Room 102 + Dept Office</option>
+          <option value="MULTI:ROOM_101,ROOM_103">Dual: Room 101 + Room 103</option>
+          <option value="MULTI:ROOM_101,ROOM_102,ROOM_103">Severe: Rooms 101 + 102 + 103</option>
+        </optgroup>
+        <optgroup label="Blocked Exit Scenarios">
+          <option value="BLOCK_EXIT:EXIT_STAIR:ROOM_101">Staircase Blocked + Fire in Room 101</option>
+          <option value="BLOCK_EXIT:EXIT_NORTH_103:ROOM_102">North Door Blocked + Fire in Room 102</option>
+          <option value="BLOCK_EXIT:EXIT_EAST:ROOM_101">East Corridor Blocked + Fire in Room 101</option>
+          <option value="BLOCK_EXIT:EXIT_STAIR,EXIT_EAST:ROOM_102">Dual Block: Stair & East (North Only)</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <!-- Speed segmented control (centre) -->
+    <div class="controls-centre">
+      <div class="speed-group">
+        <span class="speed-label">SPEED</span>
+        <button class="btn btn-sim-speed active" data-speed="1">1×</button>
+        <button class="btn btn-sim-speed" data-speed="2">2×</button>
+        <button class="btn btn-sim-speed" data-speed="5">5×</button>
+      </div>
+    </div>
+
+    <!-- Right: Setup button + Customize Scenario -->
+    <div class="controls-right">
+      <button id="btn-open-scenario-builder" class="btn btn-speed" style="color:var(--accent-orange);border-color:rgba(249,115,22,0.35);" title="Open Granular Multi-Room & Exit Blocker Customizer">
+        Customize
+      </button>
+      <button id="btn-sim-setup" class="btn" title="Simulation Setup — Occupants, spread physics, demo mode">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="18" x2="18" y2="18"/></svg>
+        Setup
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SIMULATION SETUP SHEET (slide up from bottom)
+  ════════════════════════════════════════════════════ -->
+  <div id="sim-setup-sheet" class="bottom-sheet" role="dialog" aria-label="Simulation Setup" aria-hidden="true">
+    <div class="sheet-handle"></div>
+    <div class="sheet-content">
+      <h2 class="sheet-title">Simulation Setup</h2>
+
+      <div class="sheet-section">
+        <span class="sheet-section-label">Occupants</span>
+        <div class="sheet-row">
+          <span class="text-secondary" style="min-width:80px">Count</span>
+          <select id="occupant-count-select" class="scenario-dropdown" title="Total building occupant count">
+            <option value="10">10 occupants</option>
+            <option value="25">25 occupants</option>
+            <option value="50" selected>50 occupants</option>
+            <option value="75">75 occupants</option>
+            <option value="100">100 occupants</option>
+            <option value="150">150 occupants</option>
+            <option value="200">200 occupants</option>
+            <option value="300">300 occupants</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sheet-section">
+        <span class="sheet-section-label">Presentation Mode</span>
+        <div class="sheet-row">
+          <div class="mode-toggle-group">
+            <button id="btn-mode-demo-sheet" class="btn-mode active" title="Demonstration Mode (Paced)">Demo (Paced)</button>
+            <button id="btn-mode-realtime-sheet" class="btn-mode" title="Real-Time Mode (Instant)">Real-Time</button>
+          </div>
+        </div>
+        <div class="sheet-row" style="margin-top:8px;">
+          <div class="speed-group">
+            <span class="speed-label">DEMO SPEED</span>
+            <button class="btn btn-pres-speed active" data-speed="SLOW" title="1-3 events per second">Paced</button>
+            <button class="btn btn-pres-speed" data-speed="FAST" title="Instant streaming">Fast</button>
+          </div>
+        </div>
+      </div>
+
+      <button id="btn-close-setup-sheet" class="btn" style="margin-top:var(--space-2);align-self:flex-start;">Close</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       MODALS
+  ════════════════════════════════════════════════════ -->
+
+  <!-- Tooltip -->
+  <div id="tooltip" style="display:none;position:absolute;z-index:var(--z-toast);pointer-events:none;background:rgba(8,13,26,0.96);border:1px solid var(--border-accent);border-radius:8px;padding:6px 10px;font-size:12px;color:#f8fafc;box-shadow:0 4px 16px rgba(0,0,0,0.55);"></div>
+
+  <!-- Technical Audit Stream Modal -->
+  <div id="tech-drawer-modal" class="tech-drawer-modal-overlay">
+    <div style="background:var(--bg-primary);border:1px solid var(--border-accent);border-radius:var(--radius-md);width:800px;max-width:92vw;max-height:85vh;display:flex;flex-direction:column;overflow:hidden;">
+      <div style="padding:12px 16px;background:var(--bg-secondary);border-bottom:1px solid var(--border-primary);display:flex;justify-content:space-between;align-items:center;">
+        <span style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--accent-cyan);">RAW TECHNICAL AUDIT STREAM</span>
+        <button id="btn-close-tech-drawer" class="btn">Close</button>
+      </div>
+      <div id="tech-drawer-content" style="padding:14px;overflow-y:auto;flex:1;font-family:var(--font-mono);font-size:11px;"></div>
+    </div>
+  </div>
+
+  <!-- Scenario Builder Modal -->
+  <div id="scenario-builder-modal" class="scenario-builder-modal-overlay" style="display:none;"></div>
+
+  <!-- Guided Tour Modal -->
+  <div id="guided-tour-modal" style="display:none;"></div>
+
+  <!-- Configuration Modal -->
+  <div id="config-modal" style="display:none;"></div>
+
+  <!-- Custom Building Architect Modal -->
+  <div id="custom-architect-modal" style="display:none;"></div>
+
+</div><!-- /#app -->
+
+<script type="module" src="app.js?v=3.0"></script>
+</body>
+</html>

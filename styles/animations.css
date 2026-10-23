@@ -1,0 +1,117 @@
+/* ========================================================
+   ANIMATIONS.CSS — Centralized Motion System
+   AI-Driven Digital Twin — Pass 1
+   ======================================================== */
+
+/* ── Core Keyframes ─────────────────────────────────────── */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-right {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slide-left {
+  from { opacity: 0; transform: translateX(10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Status Pulse (calm) ─────────────────────────────────── */
+@keyframes pulse-status {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.45; }
+}
+@keyframes pulse-alert {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.9); }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.85); }
+}
+
+/* ── Route Drawing ───────────────────────────────────────── */
+@keyframes draw-route {
+  from { stroke-dashoffset: 600; opacity: 0; }
+  20%  { opacity: 1; }
+  to   { stroke-dashoffset: 0;   opacity: 1; }
+}
+
+/* ── Dashed Hazard March ─────────────────────────────────── */
+@keyframes dash-march {
+  from { stroke-dashoffset: 0; }
+  to   { stroke-dashoffset: -24; }
+}
+
+/* ── Toast ───────────────────────────────────────────────── */
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(-8px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes slide-in-toast {
+  from { opacity: 0; transform: translateY(-8px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Shimmer ─────────────────────────────────────────────── */
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position:  200% 0; }
+}
+
+/* ── Hazard Flash ────────────────────────────────────────── */
+@keyframes hazard-flash {
+  0%, 100% { opacity: 1; }
+  25%       { opacity: 0.4; }
+  50%       { opacity: 1; }
+  75%       { opacity: 0.4; }
+}
+
+/* ── Utility Classes ─────────────────────────────────────── */
+.animate-fade-in     { animation: fade-in  var(--duration-normal) var(--ease-standard) both; }
+.animate-fade-out    { animation: fade-out var(--duration-normal) var(--ease-standard) both; }
+.animate-slide-up    { animation: slide-up var(--duration-normal) var(--ease-spring)   both; }
+.animate-slide-down  { animation: slide-down  var(--duration-normal) var(--ease-spring) both; }
+.animate-slide-right { animation: slide-right var(--duration-normal) var(--ease-spring) both; }
+.animate-scale-in    { animation: scale-in    var(--duration-normal) var(--ease-spring) both; }
+
+.stagger-1 { animation-delay: 30ms; }
+.stagger-2 { animation-delay: 60ms; }
+.stagger-3 { animation-delay: 90ms; }
+.stagger-4 { animation-delay: 120ms; }
+.stagger-5 { animation-delay: 150ms; }
+
+.route-segment-animated {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: draw-route 0.9s var(--ease-spring) forwards;
+}
+.hazard-predicted-perimeter {
+  animation: dash-march 3s linear infinite;
+}
+
+/* ── Reduced Motion ──────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0ms !important;
+  }
+}

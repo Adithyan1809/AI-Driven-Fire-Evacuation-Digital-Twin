@@ -1,0 +1,812 @@
+[
+  {
+    "case_id": 26,
+    "entity": "BMS-ZN-101-THERM",
+    "expected_entity": "ROOM_101",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 27,
+    "entity": "BMS-ZN-102-THERM",
+    "expected_entity": "ROOM_102",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 28,
+    "entity": "BMS-ZN-103-THERM",
+    "expected_entity": "ROOM_103",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 29,
+    "entity": "BMS-STAIR-W-ZN",
+    "expected_entity": "STAIR_01",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 30,
+    "entity": "BMS-ELEV-SHAFT-01",
+    "expected_entity": "LIFT_1",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 37,
+    "entity": "FAS_LOOP1_DEV_101",
+    "expected_entity": "ROOM_101",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 38,
+    "entity": "FAS_LOOP1_DEV_102",
+    "expected_entity": "ROOM_102",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 39,
+    "entity": "FAS_LOOP1_DEV_103",
+    "expected_entity": "ROOM_103",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 40,
+    "entity": "FAS_LOOP2_STAFF",
+    "expected_entity": "STAFF_ROOM",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 41,
+    "entity": "FAS_LOOP2_ADMIN",
+    "expected_entity": "DEPT_OFFICE",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 42,
+    "entity": "FAS_LOOP2_HOD1",
+    "expected_entity": "HOD_CABIN_1",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 43,
+    "entity": "FAS_LOOP2_HOD2",
+    "expected_entity": "HOD_CABIN_2",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 44,
+    "entity": "FAS_CORR_CENTRAL_01",
+    "expected_entity": "CORRIDOR_MAIN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 45,
+    "entity": "FAS_STAIRWELL_WEST_DET",
+    "expected_entity": "STAIR_01",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 54,
+    "entity": "IFC_GUID_ROOM_101_AI",
+    "expected_entity": "ROOM_101",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 55,
+    "entity": "IFC_GUID_ROOM_102_NET",
+    "expected_entity": "ROOM_102",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 56,
+    "entity": "IFC_GUID_ROOM_103_EMB",
+    "expected_entity": "ROOM_103",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 57,
+    "entity": "IFC_GUID_STAFF_LOUNGE",
+    "expected_entity": "STAFF_ROOM",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 58,
+    "entity": "IFC_GUID_DEPT_ADMIN",
+    "expected_entity": "DEPT_OFFICE",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 59,
+    "entity": "IFC_GUID_STAIR_WEST",
+    "expected_entity": "STAIR_01",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 60,
+    "entity": "IFC_GUID_ELEV_BANK_1",
+    "expected_entity": "LIFT_1",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 61,
+    "entity": "NEXUS-AI-01",
+    "expected_entity": "ROOM_101",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 62,
+    "entity": "DISTRIB-SYS-LAB",
+    "expected_entity": "ROOM_102",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 63,
+    "entity": "HARDWARE-IOT-BAY",
+    "expected_entity": "ROOM_103",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 64,
+    "entity": "FACULTY-MEETING-LOUNGE",
+    "expected_entity": "STAFF_ROOM",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 65,
+    "entity": "ADMIN-ADMISSIONS-DESK",
+    "expected_entity": "DEPT_OFFICE",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 66,
+    "entity": "CHIEF-HOD-SUITE",
+    "expected_entity": "HOD_CABIN_1",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 67,
+    "entity": "DEPUTY-CHIEF-CABIN",
+    "expected_entity": "HOD_CABIN_2",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 68,
+    "entity": "CENTRAL-SPINE-HALLWAY",
+    "expected_entity": "CORRIDOR_MAIN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 69,
+    "entity": "WEST-FIRE-ESCAPE",
+    "expected_entity": "STAIR_01",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 70,
+    "entity": "PASSENGER-LIFT-WEST",
+    "expected_entity": "LIFT_1",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 71,
+    "entity": "PASSENGER-LIFT-EAST",
+    "expected_entity": "LIFT_2",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 72,
+    "entity": "VISION-AI-LAB-SPACE",
+    "expected_entity": "ROOM_101",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 73,
+    "entity": "ROUTER-SWITCH-LAB",
+    "expected_entity": "ROOM_102",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 74,
+    "entity": "SENSORS-CIRCUITS-LAB",
+    "expected_entity": "ROOM_103",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 75,
+    "entity": "PROFESSORS-TEA-ROOM",
+    "expected_entity": "STAFF_ROOM",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 76,
+    "entity": "CLERK-STUDENT-AFFAIRS",
+    "expected_entity": "DEPT_OFFICE",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 77,
+    "entity": "LEFT-SIDE-CORRIDOR",
+    "expected_entity": "CORRIDOR_LEFT",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 78,
+    "entity": "RIGHT-WING-HALL",
+    "expected_entity": "CORRIDOR_RIGHT",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 79,
+    "entity": "NORTH-EGRESS-DOOR-103",
+    "expected_entity": "EXIT_NORTH_103",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 80,
+    "entity": "SOUTH-ADMIN-EXIT-DOOR",
+    "expected_entity": "EXIT_SOUTH_OFFICE",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 81,
+    "entity": "DEEP-LEARNING-CLUSTER-ROOM",
+    "expected_entity": "ROOM_101",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 82,
+    "entity": "ETHERNET-NETWORKING-BAY",
+    "expected_entity": "ROOM_102",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 83,
+    "entity": "ARDUINO-RASPBERRY-WORKBENCH",
+    "expected_entity": "ROOM_103",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 84,
+    "entity": "LECTURERS-LOUNGE",
+    "expected_entity": "STAFF_ROOM",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 85,
+    "entity": "CHAIRPERSON-CABIN",
+    "expected_entity": "HOD_CABIN_1",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 86,
+    "entity": "HOD-CABIN",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 87,
+    "entity": "ELEV-FOYER",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 88,
+    "entity": "CORRIDOR-GENERIC",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 89,
+    "entity": "LIFT-SHAFT-GENERIC",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 90,
+    "entity": "EXECUTIVE-OFFICE",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 91,
+    "entity": "COMPUTING-LAB",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 92,
+    "entity": "HALLWAY-ZONE",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 93,
+    "entity": "ADMIN-WING",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 94,
+    "entity": "FIRE-EXIT-GENERAL",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 95,
+    "entity": "DEPARTMENT-LAB",
+    "expected_entity": "AMBIGUOUS",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 96,
+    "entity": "ZONE_X73",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 97,
+    "entity": "BASEMENT_SUBSTATION_99",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 98,
+    "entity": "ROOF_SOLAR_INVERTER",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 99,
+    "entity": "CAMPUS_GATE_SOUTH",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 100,
+    "entity": "CAFETERIA_KITCHEN_FLOOR_G",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 101,
+    "entity": "AUDITORIUM_BALCONY_F3",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 102,
+    "entity": "CHEMISTRY_FUME_HOOD_B2",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 103,
+    "entity": "WATER_TANK_PUMP_STATION",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 104,
+    "entity": "LIBRARY_STACKS_FLOOR4",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 105,
+    "entity": "HOSTEL_BLOCK_D_ROOM_402",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 106,
+    "entity": "???_CORRUPT_NULL_###",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 107,
+    "entity": "0xDEADBEEF_PACKET_ERR",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 108,
+    "entity": "NaN-UNDEFINED-ZONE",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 109,
+    "entity": "---***===***---",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 110,
+    "entity": "NULL_POINTER_SENSOR",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 111,
+    "entity": "///...///",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 112,
+    "entity": "EMPTY_STRING_PAYLOAD",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 113,
+    "entity": "GARBAGE_COLLECTION_DUMP",
+    "expected_entity": "UNKNOWN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 114,
+    "entity": "AI-LAB-FAHR-NODE",
+    "expected_entity": "ROOM_101",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 115,
+    "entity": "NET-LAB-OPTICAL-OBS",
+    "expected_entity": "ROOM_102",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 116,
+    "entity": "EMB-LAB-KELVIN-THERM",
+    "expected_entity": "ROOM_103",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 117,
+    "entity": "FACULTY-LOUNGE-DENS",
+    "expected_entity": "STAFF_ROOM",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 118,
+    "entity": "MAIN-SPINE-EXTINCTION",
+    "expected_entity": "CORRIDOR_MAIN",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 119,
+    "entity": "CHAIR-ROOM-DELTA-T",
+    "expected_entity": "HOD_CABIN_1",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  },
+  {
+    "case_id": 120,
+    "entity": "WEST-STAIR-PM25-AQI",
+    "expected_entity": "STAIR_01",
+    "mapper_dictionary_match": false,
+    "registry_alias_match": false,
+    "prompt_match": false,
+    "source_code_match": false,
+    "LEAK": false
+  }
+]

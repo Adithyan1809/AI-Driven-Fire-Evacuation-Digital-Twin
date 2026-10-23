@@ -1,0 +1,34 @@
+{
+  "name": "ai-digital-twin-evacuation",
+  "version": "2.0.0",
+  "description": "AI-Driven Fire Evacuation Digital Twin with Semantic Interoperability Middleware",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node scripts/run_tests.mjs",
+    "test:reset": "node scripts/test_hard_reset.mjs",
+    "test:fire": "node scripts/test_fire_propagation.mjs",
+    "test:routing": "node scripts/test_deterministic_evacuation.mjs",
+    "test:building-b": "node scripts/test_building_b_generalization.mjs",
+    "test:blocked": "node scripts/test_blocked_exits_scenarios.mjs",
+    "test:custom": "node scripts/test_custom_building_adaptation.mjs",
+    "test:security": "node scripts/test_security.mjs",
+    "test:stale": "node scripts/test_stale_telemetry.mjs",
+    "test:generation": "node scripts/test_generation_id.mjs",
+    "test:values": "node scripts/test_value_ranges.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "digital-twin",
+    "fire-evacuation",
+    "semantic-interoperability",
+    "gemini-ai",
+    "iot",
+    "building-management"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,1155 @@
+{
+  "id": "DEPT_FLOOR_1",
+  "name": "Engineering Department Building",
+  "floor": 1,
+  "description": "First Floor — Engineering Department",
+  "viewport": {
+    "width": 880,
+    "height": 490
+  },
+  "spaces": [
+    {
+      "id": "ROOM_103",
+      "type": "CLASSROOM",
+      "name": "Room 103",
+      "floor": 1,
+      "capacity": 40,
+      "x": 20,
+      "y": 30,
+      "width": 172,
+      "height": 128,
+      "doors": [
+        "DOOR_103_MAIN"
+      ],
+      "ifc_id": "IFC_1001",
+      "sensors": [
+        "TEMP_103",
+        "SMOKE_103",
+        "OCC_103",
+        "FA_103"
+      ]
+    },
+    {
+      "id": "ROOM_102",
+      "type": "CLASSROOM",
+      "name": "Room 102",
+      "floor": 1,
+      "capacity": 40,
+      "x": 202,
+      "y": 30,
+      "width": 172,
+      "height": 128,
+      "doors": [
+        "DOOR_102_MAIN"
+      ],
+      "ifc_id": "IFC_1002",
+      "sensors": [
+        "TEMP_102",
+        "SMOKE_102",
+        "OCC_102",
+        "FA_102"
+      ]
+    },
+    {
+      "id": "ROOM_101",
+      "type": "CLASSROOM",
+      "name": "Room 101",
+      "floor": 1,
+      "capacity": 40,
+      "x": 384,
+      "y": 30,
+      "width": 172,
+      "height": 128,
+      "doors": [
+        "DOOR_101_MAIN"
+      ],
+      "ifc_id": "IFC_1003",
+      "sensors": [
+        "TEMP_101",
+        "SMOKE_101",
+        "OCC_101",
+        "FA_101"
+      ],
+      "fire_origin": true
+    },
+    {
+      "id": "STAFF_ROOM",
+      "type": "OFFICE",
+      "name": "Staff Room",
+      "floor": 1,
+      "capacity": 15,
+      "x": 566,
+      "y": 30,
+      "width": 294,
+      "height": 128,
+      "doors": [
+        "DOOR_STAFF_MAIN"
+      ],
+      "ifc_id": "IFC_1004",
+      "sensors": [
+        "TEMP_STAFF",
+        "SMOKE_STAFF",
+        "OCC_STAFF"
+      ]
+    },
+    {
+      "id": "CORRIDOR_MAIN",
+      "type": "CORRIDOR",
+      "name": "Main Corridor",
+      "floor": 1,
+      "capacity": 120,
+      "x": 20,
+      "y": 158,
+      "width": 840,
+      "height": 78,
+      "doors": [],
+      "ifc_id": "IFC_1005",
+      "sensors": [
+        "SMOKE_CORR_W",
+        "SMOKE_CORR_E"
+      ]
+    },
+    {
+      "id": "CORRIDOR_LEFT",
+      "type": "CORRIDOR",
+      "name": "West Pathway",
+      "floor": 1,
+      "capacity": 30,
+      "x": 110,
+      "y": 236,
+      "width": 70,
+      "height": 234,
+      "doors": [],
+      "ifc_id": "IFC_1006",
+      "sensors": [
+        "TEMP_CORR_L",
+        "SMOKE_CORR_L",
+        "OCC_CORR_L"
+      ]
+    },
+    {
+      "id": "LIFT_1",
+      "type": "LIFT",
+      "name": "Lift 1",
+      "floor": 1,
+      "capacity": 8,
+      "x": 22,
+      "y": 240,
+      "width": 86,
+      "height": 62,
+      "doors": [
+        "DOOR_LIFT1"
+      ],
+      "ifc_id": "IFC_1007",
+      "sensors": [],
+      "evacuation_usable": false
+    },
+    {
+      "id": "LIFT_2",
+      "type": "LIFT",
+      "name": "Lift 2",
+      "floor": 1,
+      "capacity": 8,
+      "x": 22,
+      "y": 310,
+      "width": 86,
+      "height": 62,
+      "doors": [
+        "DOOR_LIFT2"
+      ],
+      "ifc_id": "IFC_1008",
+      "sensors": [],
+      "evacuation_usable": false
+    },
+    {
+      "id": "STAIR_01",
+      "type": "STAIR",
+      "name": "Staircase",
+      "floor": 1,
+      "capacity": 30,
+      "x": 22,
+      "y": 380,
+      "width": 86,
+      "height": 90,
+      "doors": [
+        "DOOR_STAIR"
+      ],
+      "ifc_id": "IFC_1009",
+      "sensors": []
+    },
+    {
+      "id": "DEPT_OFFICE",
+      "type": "OFFICE",
+      "name": "Department Office",
+      "floor": 1,
+      "capacity": 10,
+      "x": 290,
+      "y": 240,
+      "width": 200,
+      "height": 190,
+      "doors": [
+        "DOOR_DEPT"
+      ],
+      "ifc_id": "IFC_1010",
+      "sensors": [
+        "TEMP_DEPT",
+        "OCC_DEPT"
+      ]
+    },
+    {
+      "id": "HOD_CABIN_2",
+      "type": "OFFICE",
+      "name": "HOD Cabin 2",
+      "floor": 1,
+      "capacity": 4,
+      "x": 500,
+      "y": 240,
+      "width": 160,
+      "height": 190,
+      "doors": [
+        "DOOR_HOD2"
+      ],
+      "ifc_id": "IFC_1011",
+      "sensors": [
+        "OCC_HOD2"
+      ]
+    },
+    {
+      "id": "HOD_CABIN_1",
+      "type": "OFFICE",
+      "name": "HOD Cabin 1",
+      "floor": 1,
+      "capacity": 4,
+      "x": 670,
+      "y": 240,
+      "width": 190,
+      "height": 190,
+      "doors": [
+        "DOOR_HOD1"
+      ],
+      "ifc_id": "IFC_1012",
+      "sensors": [
+        "OCC_HOD1"
+      ]
+    }
+  ],
+  "exits": [
+    {
+      "id": "EXIT_STAIR",
+      "name": "Staircase Exit",
+      "type": "EMERGENCY_EXIT",
+      "connected_node": "STAIR_01",
+      "x": 22,
+      "y": 470,
+      "width": 86,
+      "height": 10,
+      "label_x": 65,
+      "label_y": 486,
+      "priority": 1
+    },
+    {
+      "id": "EXIT_NORTH_103",
+      "name": "North Emergency Exit",
+      "type": "EMERGENCY_EXIT",
+      "connected_node": "ROOM_103",
+      "x": 22,
+      "y": 20,
+      "width": 86,
+      "height": 10,
+      "label_x": 65,
+      "label_y": 14,
+      "priority": 2
+    },
+    {
+      "id": "EXIT_EAST",
+      "name": "East Exit",
+      "type": "EXIT",
+      "connected_node": "JUNC_E",
+      "x": 860,
+      "y": 158,
+      "width": 10,
+      "height": 80,
+      "label_x": 876,
+      "label_y": 198,
+      "priority": 3
+    }
+  ],
+  "doors": [
+    {
+      "id": "DOOR_103_MAIN",
+      "from": "ROOM_103",
+      "to": "CORRIDOR_MAIN",
+      "x": 90,
+      "y": 158,
+      "w": 56,
+      "h": 8
+    },
+    {
+      "id": "DOOR_102_MAIN",
+      "from": "ROOM_102",
+      "to": "CORRIDOR_MAIN",
+      "x": 265,
+      "y": 158,
+      "w": 56,
+      "h": 8
+    },
+    {
+      "id": "DOOR_101_MAIN",
+      "from": "ROOM_101",
+      "to": "CORRIDOR_MAIN",
+      "x": 447,
+      "y": 158,
+      "w": 56,
+      "h": 8
+    },
+    {
+      "id": "DOOR_STAFF_MAIN",
+      "from": "STAFF_ROOM",
+      "to": "CORRIDOR_MAIN",
+      "x": 666,
+      "y": 158,
+      "w": 56,
+      "h": 8
+    },
+    {
+      "id": "DOOR_CORR_LEFT",
+      "from": "CORRIDOR_MAIN",
+      "to": "CORRIDOR_LEFT",
+      "x": 110,
+      "y": 236,
+      "w": 70,
+      "h": 4
+    },
+    {
+      "id": "DOOR_LIFT1",
+      "from": "CORRIDOR_LEFT",
+      "to": "LIFT_1",
+      "x": 108,
+      "y": 255,
+      "w": 4,
+      "h": 32
+    },
+    {
+      "id": "DOOR_LIFT2",
+      "from": "CORRIDOR_LEFT",
+      "to": "LIFT_2",
+      "x": 108,
+      "y": 325,
+      "w": 4,
+      "h": 32
+    },
+    {
+      "id": "DOOR_STAIR",
+      "from": "CORRIDOR_LEFT",
+      "to": "STAIR_01",
+      "x": 108,
+      "y": 410,
+      "w": 4,
+      "h": 32
+    },
+    {
+      "id": "DOOR_DEPT",
+      "from": "DEPT_OFFICE",
+      "to": "CORRIDOR_MAIN",
+      "x": 340,
+      "y": 238,
+      "w": 72,
+      "h": 4
+    },
+    {
+      "id": "DOOR_HOD2",
+      "from": "HOD_CABIN_2",
+      "to": "CORRIDOR_MAIN",
+      "x": 530,
+      "y": 238,
+      "w": 56,
+      "h": 4
+    },
+    {
+      "id": "DOOR_HOD1",
+      "from": "HOD_CABIN_1",
+      "to": "CORRIDOR_MAIN",
+      "x": 710,
+      "y": 238,
+      "w": 56,
+      "h": 4
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "ROOM_103",
+        "x": 106,
+        "y": 94
+      },
+      {
+        "id": "ROOM_102",
+        "x": 288,
+        "y": 94
+      },
+      {
+        "id": "ROOM_101",
+        "x": 470,
+        "y": 94
+      },
+      {
+        "id": "STAFF_ROOM",
+        "x": 713,
+        "y": 94
+      },
+      {
+        "id": "DEPT_OFFICE",
+        "x": 390,
+        "y": 335
+      },
+      {
+        "id": "HOD_CABIN_2",
+        "x": 580,
+        "y": 335
+      },
+      {
+        "id": "HOD_CABIN_1",
+        "x": 765,
+        "y": 335
+      },
+      {
+        "id": "LIFT_1",
+        "x": 65,
+        "y": 271
+      },
+      {
+        "id": "LIFT_2",
+        "x": 65,
+        "y": 341
+      },
+      {
+        "id": "STAIR_01",
+        "x": 65,
+        "y": 425
+      },
+      {
+        "id": "JUNC_W",
+        "x": 145,
+        "y": 198
+      },
+      {
+        "id": "JUNC_103",
+        "x": 140,
+        "y": 198
+      },
+      {
+        "id": "JUNC_102",
+        "x": 320,
+        "y": 198
+      },
+      {
+        "id": "JUNC_101",
+        "x": 500,
+        "y": 198
+      },
+      {
+        "id": "JUNC_E",
+        "x": 750,
+        "y": 198
+      },
+      {
+        "id": "JUNC_LOWER",
+        "x": 145,
+        "y": 271
+      },
+      {
+        "id": "JUNC_PATH_MID",
+        "x": 145,
+        "y": 341
+      },
+      {
+        "id": "JUNC_PATH_BTM",
+        "x": 145,
+        "y": 425
+      },
+      {
+        "id": "EXIT_STAIR",
+        "x": 65,
+        "y": 478
+      },
+      {
+        "id": "EXIT_NORTH_103",
+        "x": 65,
+        "y": 16
+      },
+      {
+        "id": "EXIT_EAST",
+        "x": 870,
+        "y": 198
+      }
+    ],
+    "edges": [
+      {
+        "id": "E_103_J103",
+        "from": "ROOM_103",
+        "to": "JUNC_103",
+        "base_cost": 1
+      },
+      {
+        "id": "E_102_J102",
+        "from": "ROOM_102",
+        "to": "JUNC_102",
+        "base_cost": 1
+      },
+      {
+        "id": "E_101_J101",
+        "from": "ROOM_101",
+        "to": "JUNC_101",
+        "base_cost": 1
+      },
+      {
+        "id": "E_STAFF_JE",
+        "from": "STAFF_ROOM",
+        "to": "JUNC_E",
+        "base_cost": 1
+      },
+      {
+        "id": "E_JW_J103",
+        "from": "JUNC_W",
+        "to": "JUNC_103",
+        "base_cost": 1
+      },
+      {
+        "id": "E_J103_J102",
+        "from": "JUNC_103",
+        "to": "JUNC_102",
+        "base_cost": 1
+      },
+      {
+        "id": "E_J102_J101",
+        "from": "JUNC_102",
+        "to": "JUNC_101",
+        "base_cost": 1
+      },
+      {
+        "id": "E_J101_JE",
+        "from": "JUNC_101",
+        "to": "JUNC_E",
+        "base_cost": 1
+      },
+      {
+        "id": "E_JE_EXITE",
+        "from": "JUNC_E",
+        "to": "EXIT_EAST",
+        "base_cost": 1
+      },
+      {
+        "id": "E_JW_JLOW",
+        "from": "JUNC_W",
+        "to": "JUNC_LOWER",
+        "base_cost": 1
+      },
+      {
+        "id": "E_JLOW_MID",
+        "from": "JUNC_LOWER",
+        "to": "JUNC_PATH_MID",
+        "base_cost": 1
+      },
+      {
+        "id": "E_MID_BTM",
+        "from": "JUNC_PATH_MID",
+        "to": "JUNC_PATH_BTM",
+        "base_cost": 1
+      },
+      {
+        "id": "E_JLOW_L1",
+        "from": "JUNC_LOWER",
+        "to": "LIFT_1",
+        "base_cost": 1
+      },
+      {
+        "id": "E_MID_L2",
+        "from": "JUNC_PATH_MID",
+        "to": "LIFT_2",
+        "base_cost": 1
+      },
+      {
+        "id": "E_BTM_STAIR",
+        "from": "JUNC_PATH_BTM",
+        "to": "STAIR_01",
+        "base_cost": 1
+      },
+      {
+        "id": "E_ST_EXST",
+        "from": "STAIR_01",
+        "to": "EXIT_STAIR",
+        "base_cost": 1
+      },
+      {
+        "id": "E_103_EXITN",
+        "from": "ROOM_103",
+        "to": "EXIT_NORTH_103",
+        "base_cost": 2
+      },
+      {
+        "id": "E_DEPT_J102",
+        "from": "DEPT_OFFICE",
+        "to": "JUNC_102",
+        "base_cost": 2
+      },
+      {
+        "id": "E_HOD2_J101",
+        "from": "HOD_CABIN_2",
+        "to": "JUNC_101",
+        "base_cost": 2
+      },
+      {
+        "id": "E_HOD1_JE",
+        "from": "HOD_CABIN_1",
+        "to": "JUNC_E",
+        "base_cost": 2
+      },
+      {
+        "id": "E_HOD2_HOD1",
+        "from": "HOD_CABIN_2",
+        "to": "HOD_CABIN_1",
+        "base_cost": 1
+      }
+    ]
+  },
+  "sensors": [
+    {
+      "id": "TEMP_103",
+      "type": "TEMPERATURE",
+      "room": "ROOM_103",
+      "x": 38,
+      "y": 52,
+      "source_system": "BMS",
+      "bms_zone": "Z103"
+    },
+    {
+      "id": "TEMP_102",
+      "type": "TEMPERATURE",
+      "room": "ROOM_102",
+      "x": 218,
+      "y": 52,
+      "source_system": "BMS",
+      "bms_zone": "Z102"
+    },
+    {
+      "id": "TEMP_101",
+      "type": "TEMPERATURE",
+      "room": "ROOM_101",
+      "x": 400,
+      "y": 52,
+      "source_system": "BMS",
+      "bms_zone": "Z101"
+    },
+    {
+      "id": "TEMP_STAFF",
+      "type": "TEMPERATURE",
+      "room": "STAFF_ROOM",
+      "x": 582,
+      "y": 52,
+      "source_system": "BMS",
+      "bms_zone": "Z_STAFF"
+    },
+    {
+      "id": "TEMP_DEPT",
+      "type": "TEMPERATURE",
+      "room": "DEPT_OFFICE",
+      "x": 300,
+      "y": 256,
+      "source_system": "BMS",
+      "bms_zone": "Z_DEPT"
+    },
+    {
+      "id": "SMOKE_103",
+      "type": "SMOKE",
+      "room": "ROOM_103",
+      "x": 170,
+      "y": 52,
+      "source_system": "BMS",
+      "bms_zone": "Z103"
+    },
+    {
+      "id": "SMOKE_102",
+      "type": "SMOKE",
+      "room": "ROOM_102",
+      "x": 352,
+      "y": 52,
+      "source_system": "BMS",
+      "bms_zone": "Z102"
+    },
+    {
+      "id": "SMOKE_101",
+      "type": "SMOKE",
+      "room": "ROOM_101",
+      "x": 534,
+      "y": 52,
+      "source_system": "BMS",
+      "bms_zone": "Z101"
+    },
+    {
+      "id": "SMOKE_STAFF",
+      "type": "SMOKE",
+      "room": "STAFF_ROOM",
+      "x": 820,
+      "y": 52,
+      "source_system": "BMS",
+      "bms_zone": "Z_STAFF"
+    },
+    {
+      "id": "SMOKE_CORR_W",
+      "type": "SMOKE",
+      "room": "CORRIDOR_MAIN",
+      "x": 200,
+      "y": 186,
+      "source_system": "BMS",
+      "bms_zone": "Z_CORR"
+    },
+    {
+      "id": "SMOKE_CORR_E",
+      "type": "SMOKE",
+      "room": "CORRIDOR_MAIN",
+      "x": 620,
+      "y": 186,
+      "source_system": "BMS",
+      "bms_zone": "Z_CORR"
+    },
+    {
+      "id": "TEMP_CORR_L",
+      "type": "TEMPERATURE",
+      "room": "CORRIDOR_LEFT",
+      "x": 145,
+      "y": 270,
+      "source_system": "BMS",
+      "bms_zone": "Z_CORR_L"
+    },
+    {
+      "id": "SMOKE_CORR_L",
+      "type": "SMOKE",
+      "room": "CORRIDOR_LEFT",
+      "x": 145,
+      "y": 340,
+      "source_system": "BMS",
+      "bms_zone": "Z_CORR_L"
+    },
+    {
+      "id": "OCC_CORR_L",
+      "type": "OCCUPANCY",
+      "room": "CORRIDOR_LEFT",
+      "x": 145,
+      "y": 410,
+      "source_system": "OCCUPANCY",
+      "camera_id": "CAM_CORR_L"
+    },
+    {
+      "id": "FA_103",
+      "type": "FIRE_ALARM",
+      "room": "ROOM_103",
+      "x": 38,
+      "y": 148,
+      "source_system": "FAS",
+      "fas_device": "FA_D_103"
+    },
+    {
+      "id": "FA_102",
+      "type": "FIRE_ALARM",
+      "room": "ROOM_102",
+      "x": 218,
+      "y": 148,
+      "source_system": "FAS",
+      "fas_device": "FA_D_102"
+    },
+    {
+      "id": "FA_101",
+      "type": "FIRE_ALARM",
+      "room": "ROOM_101",
+      "x": 400,
+      "y": 148,
+      "source_system": "FAS",
+      "fas_device": "FA_D_101"
+    },
+    {
+      "id": "OCC_103",
+      "type": "OCCUPANCY",
+      "room": "ROOM_103",
+      "x": 170,
+      "y": 148,
+      "source_system": "OCCUPANCY",
+      "camera_id": "CAM_103"
+    },
+    {
+      "id": "OCC_102",
+      "type": "OCCUPANCY",
+      "room": "ROOM_102",
+      "x": 352,
+      "y": 148,
+      "source_system": "OCCUPANCY",
+      "camera_id": "CAM_102"
+    },
+    {
+      "id": "OCC_101",
+      "type": "OCCUPANCY",
+      "room": "ROOM_101",
+      "x": 534,
+      "y": 148,
+      "source_system": "OCCUPANCY",
+      "camera_id": "CAM_101"
+    },
+    {
+      "id": "OCC_STAFF",
+      "type": "OCCUPANCY",
+      "room": "STAFF_ROOM",
+      "x": 820,
+      "y": 148,
+      "source_system": "OCCUPANCY",
+      "camera_id": "CAM_STAFF"
+    },
+    {
+      "id": "OCC_DEPT",
+      "type": "OCCUPANCY",
+      "room": "DEPT_OFFICE",
+      "x": 460,
+      "y": 256,
+      "source_system": "OCCUPANCY",
+      "camera_id": "CAM_DEPT"
+    },
+    {
+      "id": "OCC_HOD2",
+      "type": "OCCUPANCY",
+      "room": "HOD_CABIN_2",
+      "x": 540,
+      "y": 290,
+      "source_system": "OCCUPANCY",
+      "camera_id": "CAM_HOD2"
+    },
+    {
+      "id": "OCC_HOD1",
+      "type": "OCCUPANCY",
+      "room": "HOD_CABIN_1",
+      "x": 720,
+      "y": 290,
+      "source_system": "OCCUPANCY",
+      "camera_id": "CAM_HOD1"
+    }
+  ],
+  "system_identifiers": {
+    "ROOM_103": {
+      "BMS": "Z103",
+      "FAS": "R103",
+      "BIM": "IFC_1001",
+      "OCCUPANCY": "ROOM-103"
+    },
+    "ROOM_102": {
+      "BMS": "Z102",
+      "FAS": "R102",
+      "BIM": "IFC_1002",
+      "OCCUPANCY": "ROOM-102"
+    },
+    "ROOM_101": {
+      "BMS": "Z101",
+      "FAS": "R101",
+      "BIM": "IFC_1003",
+      "OCCUPANCY": "ROOM-101"
+    },
+    "STAFF_ROOM": {
+      "BMS": "Z_STAFF",
+      "FAS": "R_STAFF",
+      "BIM": "IFC_1004",
+      "OCCUPANCY": "ROOM-STAFF"
+    },
+    "CORRIDOR_MAIN": {
+      "BMS": "Z_CORR",
+      "FAS": "R_CORR",
+      "BIM": "IFC_1005",
+      "OCCUPANCY": "ROOM-CORR"
+    },
+    "CORRIDOR_LEFT": {
+      "BMS": "Z_CORR_L",
+      "FAS": "R_CORR_L",
+      "BIM": "IFC_1006",
+      "OCCUPANCY": "ROOM-CORR-L"
+    },
+    "DEPT_OFFICE": {
+      "BMS": "Z_DEPT",
+      "FAS": "R_DEPT",
+      "BIM": "IFC_1010",
+      "OCCUPANCY": "ROOM-DEPT"
+    },
+    "HOD_CABIN_2": {
+      "BMS": "Z_HOD2",
+      "FAS": "R_HOD2",
+      "BIM": "IFC_1011",
+      "OCCUPANCY": "ROOM-HOD2"
+    },
+    "HOD_CABIN_1": {
+      "BMS": "Z_HOD1",
+      "FAS": "R_HOD1",
+      "BIM": "IFC_1012",
+      "OCCUPANCY": "ROOM-HOD1"
+    },
+    "STAIR_01": {
+      "BMS": "Z_STAIR",
+      "FAS": "R_STAIR",
+      "BIM": "IFC_1009",
+      "OCCUPANCY": "ROOM-STAIR"
+    },
+    "LIFT_1": {
+      "BMS": "Z_LIFT1",
+      "FAS": "R_LIFT1",
+      "BIM": "IFC_1007",
+      "OCCUPANCY": "ELEV_1"
+    },
+    "LIFT_2": {
+      "BMS": "Z_LIFT2",
+      "FAS": "R_LIFT2",
+      "BIM": "IFC_1008",
+      "OCCUPANCY": "ELEV_2"
+    }
+  },
+  "sensor_baselines": {
+    "temperature": {
+      "min": 28,
+      "max": 32
+    },
+    "smoke": {
+      "min": 0,
+      "max": 0.04
+    },
+    "occupancy": {
+      "ROOM_103": {
+        "base": 18,
+        "noise": 1
+      },
+      "ROOM_102": {
+        "base": 18,
+        "noise": 1
+      },
+      "ROOM_101": {
+        "base": 15,
+        "noise": 1
+      },
+      "STAFF_ROOM": {
+        "base": 6,
+        "noise": 1
+      },
+      "DEPT_OFFICE": {
+        "base": 4,
+        "noise": 0
+      },
+      "HOD_CABIN_2": {
+        "base": 2,
+        "noise": 0
+      },
+      "HOD_CABIN_1": {
+        "base": 2,
+        "noise": 0
+      }
+    }
+  },
+  "scenario": {
+    "fire_room": "ROOM_101",
+    "fire_start_tick": 100,
+    "temp_ramp_rate": 0.95,
+    "smoke_ramp_rate": 0.015,
+    "propagation_ticks": 20,
+    "adjacent_rooms": [
+      "CORRIDOR_MAIN",
+      "ROOM_102"
+    ],
+    "adjacent_smoke_factor": 0.4,
+    "alarm_delay_ticks": 8,
+    "smoke_alarm_threshold": 0.3,
+    "cost_crowded": 3,
+    "cost_smoke": 20,
+    "cost_dangerous": 1000,
+    "cost_blocked": 999999
+  },
+  "spatial_graph_mapping": {
+    "ROOM_101": {
+      "nodes": [
+        "ROOM_101"
+      ],
+      "edges": [
+        "E_101_J101"
+      ],
+      "primaryJunction": "JUNC_101",
+      "description": "Room 101 AI Robotics Lab"
+    },
+    "ROOM_102": {
+      "nodes": [
+        "ROOM_102"
+      ],
+      "edges": [
+        "E_102_J102"
+      ],
+      "primaryJunction": "JUNC_102",
+      "description": "Room 102 Networks Lab"
+    },
+    "ROOM_103": {
+      "nodes": [
+        "ROOM_103"
+      ],
+      "edges": [
+        "E_103_J103",
+        "E_103_EXITN"
+      ],
+      "primaryJunction": "JUNC_103",
+      "description": "Room 103 Embedded Systems Lab"
+    },
+    "STAFF_ROOM": {
+      "nodes": [
+        "STAFF_ROOM"
+      ],
+      "edges": [
+        "E_STAFF_JE"
+      ],
+      "primaryJunction": "JUNC_E",
+      "description": "Faculty Staff Room"
+    },
+    "CORRIDOR_MAIN": {
+      "nodes": [
+        "JUNC_W",
+        "JUNC_103",
+        "JUNC_102",
+        "JUNC_101",
+        "JUNC_E"
+      ],
+      "edges": [
+        "E_JW_J103",
+        "E_J103_J102",
+        "E_J102_J101",
+        "E_J101_JE"
+      ],
+      "primaryJunction": "JUNC_101",
+      "description": "Main Arterial Corridor"
+    },
+    "CORRIDOR_LEFT": {
+      "nodes": [
+        "JUNC_LOWER",
+        "JUNC_PATH_MID",
+        "JUNC_PATH_BTM"
+      ],
+      "edges": [
+        "E_JW_JLOW",
+        "E_JLOW_MID",
+        "E_MID_BTM"
+      ],
+      "primaryJunction": "JUNC_LOWER",
+      "description": "West Pathway Corridor"
+    },
+    "DEPT_OFFICE": {
+      "nodes": [
+        "DEPT_OFFICE"
+      ],
+      "edges": [
+        "E_DEPT_J102"
+      ],
+      "primaryJunction": "JUNC_102",
+      "description": "Department Office"
+    },
+    "HOD_CABIN_2": {
+      "nodes": [
+        "HOD_CABIN_2"
+      ],
+      "edges": [
+        "E_HOD2_J101",
+        "E_HOD2_HOD1"
+      ],
+      "primaryJunction": "JUNC_101",
+      "description": "HOD Cabin 2"
+    },
+    "HOD_CABIN_1": {
+      "nodes": [
+        "HOD_CABIN_1"
+      ],
+      "edges": [
+        "E_HOD1_JE",
+        "E_HOD2_HOD1"
+      ],
+      "primaryJunction": "JUNC_E",
+      "description": "HOD Cabin 1"
+    },
+    "LIFT_1": {
+      "nodes": [
+        "LIFT_1"
+      ],
+      "edges": [
+        "E_JLOW_L1"
+      ],
+      "primaryJunction": "JUNC_LOWER",
+      "description": "Elevator Shaft 1"
+    },
+    "LIFT_2": {
+      "nodes": [
+        "LIFT_2"
+      ],
+      "edges": [
+        "E_MID_L2"
+      ],
+      "primaryJunction": "JUNC_PATH_MID",
+      "description": "Elevator Shaft 2"
+    },
+    "STAIR_01": {
+      "nodes": [
+        "STAIR_01"
+      ],
+      "edges": [
+        "E_BTM_STAIR",
+        "E_ST_EXST"
+      ],
+      "primaryJunction": "JUNC_PATH_BTM",
+      "description": "West Stairwell"
+    },
+    "EXIT_EAST": {
+      "nodes": [
+        "EXIT_EAST"
+      ],
+      "edges": [
+        "E_JE_EXITE"
+      ],
+      "primaryJunction": "JUNC_E",
+      "description": "East Exit Portal"
+    },
+    "EXIT_NORTH_103": {
+      "nodes": [
+        "EXIT_NORTH_103"
+      ],
+      "edges": [
+        "E_103_EXITN"
+      ],
+      "primaryJunction": "ROOM_103",
+      "description": "North Emergency Exit"
+    },
+    "EXIT_STAIR": {
+      "nodes": [
+        "EXIT_STAIR"
+      ],
+      "edges": [
+        "E_ST_EXST"
+      ],
+      "primaryJunction": "STAIR_01",
+      "description": "West Stair Emergency Exit"
+    }
+  },
+  "node_to_space_map": {
+    "ROOM_101": "ROOM_101",
+    "ROOM_102": "ROOM_102",
+    "ROOM_103": "ROOM_103",
+    "STAFF_ROOM": "STAFF_ROOM",
+    "DEPT_OFFICE": "DEPT_OFFICE",
+    "HOD_CABIN_2": "HOD_CABIN_2",
+    "HOD_CABIN_1": "HOD_CABIN_1",
+    "LIFT_1": "LIFT_1",
+    "LIFT_2": "LIFT_2",
+    "STAIR_01": "STAIR_01",
+    "JUNC_W": "CORRIDOR_MAIN",
+    "JUNC_103": "CORRIDOR_MAIN",
+    "JUNC_102": "CORRIDOR_MAIN",
+    "JUNC_101": "CORRIDOR_MAIN",
+    "JUNC_E": "CORRIDOR_MAIN",
+    "JUNC_LOWER": "CORRIDOR_LEFT",
+    "JUNC_PATH_MID": "CORRIDOR_LEFT",
+    "JUNC_PATH_BTM": "CORRIDOR_LEFT",
+    "EXIT_STAIR": "EXIT_STAIR",
+    "EXIT_NORTH_103": "EXIT_NORTH_103",
+    "EXIT_EAST": "EXIT_EAST"
+  }
+}

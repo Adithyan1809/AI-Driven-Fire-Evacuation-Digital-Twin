@@ -1,0 +1,15 @@
+# Authoritative Claim-Evidence Matrix
+
+| Claim | Evidence File | Exact Metric | Authoritative Result | Evidence Level | Permitted Phrasing |
+|---|---|---|---|:---:|---|
+| **AI Semantic Middleware** | `FINAL_SEMANTIC_RESULTS.json` | Precision / Recall / F1 / Accuracy | $P = 78.4\%$, $R = 31.5\%$, $\text{F1} = 44.9\%$, $\text{Acc} = 40.8\%$ | **Class A** | "Tiered semantic middleware combining LLM inference for unknown schemas with deterministic validation" |
+| **Unseen-Schema Performance** | `FINAL_UNSEEN_RESULTS.json`, `unseen_leakage_audit.json` | Accuracy / Precision / Recall / F1 | $\text{Acc} = 39.5\%$, $P = 60.0\%$, $R = 22.6\%$, $\text{F1} = 32.8\%$ ($0$ leaks) | **Class A** | "Evaluated on an audited 81-case unseen schema benchmark with zero data leakage" |
+| **7-Point Validation Firewall** | `FINAL_FIREWALL_RESULTS.json` | Anomaly Quarantine Rate | $90.0\%$ quarantined ($9/10$ cases; $0$ unauthorized DT updates) | **Class A** | "A 7-point deterministic validation firewall enforcing confidence thresholds ($\tau \ge 0.75$) and range bounds" |
+| **Dijkstra Dynamic Recalculation** | `FINAL_ROUTE_DIVERGENCE_STATS.json`, `FINAL_LATENCY_RESULTS.json` | Execution Latency & Reroutes | $630$ graph recalculations, $0.052\text{ ms}$ latency | **Class A** | "Dynamic shortest-path calculation demonstrated in sub-millisecond execution time ($0.052\text{ ms}$)" |
+| **Current-Position Dynamic Rerouting** | Automated Unit Test 1 | Path Start & Destination | Diverts from intermediate node `JUNC_102` to `EXIT_NORTH_103` | **Class A** | "Occupant route recalculation initiates from current navigation node rather than initial origin" |
+| **Spatial-to-Graph Hazard Mapping** | Automated Unit Test 2 | Graph Node Multipliers | `CORRIDOR_MAIN` node multipliers updated; path recalculated | **Class A** | "HazardEngine maps spatial entity state to constituent graph edges and nodes" |
+| **Gamma Penalty Parameter Sensitivity** | `FINAL_GAMMA_RESULTS.json` | Divergence & Safety Thresholds | Route switch at $\gamma = 2.0$; exposure cut at $\gamma \ge 3.5$ | **Class A** | "Sensitivity sweep demonstrating route switching at $\gamma = 2.0$ and exposure reduction at $\gamma \ge 3.5$" |
+| **Evacuation Outcome Equality (Baseline)** | `FINAL_CAUSAL_TIMING_ANALYSIS.json`, `FINAL_TEMPORAL_SENSITIVITY_RESULTS.json` | Static vs. Dynamic Outcomes | $\Delta t = 0.0\text{ s}$, $\Delta N_{\text{unsafe}} = 0.00$ | **Class A** | "Baseline benchmark produced identical aggregate outcomes due to coarse corridor spatial resolution" |
+| **Multi-Topology Configuration** | `FINAL_SEMANTIC_RESULTS.json` | Facility Adaptability | Evaluated across 3 configured building topologies | **Class B** | "Demonstrated across three configured building topologies" *(NOT 'universal zero-code adaptability')* |
+| **Statutory Life-Safety Certification** | N/A | Regulatory Compliance | Software simulation prototype | **Class D** | "Engineering research prototype; statutory certification (NFPA/EN 54) represents future work" |
+

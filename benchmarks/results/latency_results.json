@@ -1,0 +1,21 @@
+{
+  "geminiColdMissMs": {
+    "mean": 1,
+    "p50": 1,
+    "p95": 1
+  },
+  "heuristicMatchingMs": {
+    "mean": 0.67,
+    "p50": 0.24,
+    "p95": 1.277
+  },
+  "ruleLookupMs": {
+    "mean": 0.26,
+    "p50": 0.118,
+    "p95": 0.396
+  },
+  "validationFirewallMs": 0.012,
+  "semanticMemoryCacheHitMs": 0.005,
+  "digitalTwinStateUpdateMs": 0.045,
+  "dijkstraRouteRecalculationMs": 0.052
+}

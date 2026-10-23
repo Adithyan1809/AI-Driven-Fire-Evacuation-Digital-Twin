@@ -1,0 +1,121 @@
+id,category,system,entity,expected,isSeen,methodA_pred,methodA_correct,methodB_pred,methodB_correct,methodC_pred,methodC_correct,methodD_pred,methodD_status,methodD_correct,latencyD_ms
+1,"Exact Canonical","BMS","ROOM_101","ROOM_101",true,"ROOM_101",true,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1567.93
+2,"Exact Canonical","FAS","ROOM_102","ROOM_102",true,"ROOM_102",true,"ROOM_102",true,"ROOM_101",false,"ROOM_101","PASSED",false,1427.88
+3,"Exact Canonical","BIM","ROOM_103","ROOM_103",true,"ROOM_103",true,"ROOM_103",true,"ROOM_101",false,"ROOM_101","PASSED",false,1258.41
+4,"Exact Canonical","BMS","STAFF_ROOM","STAFF_ROOM",true,"STAFF_ROOM",true,"STAFF_ROOM",true,"ROOM_101",false,"ROOM_101","PASSED",false,1233.58
+5,"Exact Canonical","OCCUPANCY","DEPT_OFFICE","DEPT_OFFICE",true,"DEPT_OFFICE",true,"DEPT_OFFICE",true,"DEPT_OFFICE",true,"DEPT_OFFICE","PASSED",true,1375.65
+6,"Exact Canonical","BMS","HOD_CABIN_1","HOD_CABIN_1",true,"HOD_CABIN_1",true,"HOD_CABIN_2",false,"HOD_CABIN_2",false,"HOD_CABIN_2","PASSED",false,1511.5
+7,"Exact Canonical","BMS","HOD_CABIN_2","HOD_CABIN_2",true,"HOD_CABIN_2",true,"HOD_CABIN_2",true,"HOD_CABIN_2",true,"HOD_CABIN_2","PASSED",true,1422.32
+8,"Exact Canonical","FAS","CORRIDOR_MAIN","CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN","PASSED",true,1426.25
+9,"Exact Canonical","BMS","CORRIDOR_LEFT","CORRIDOR_LEFT",true,"CORRIDOR_LEFT",true,"CORRIDOR_MAIN",false,"CORRIDOR_LEFT",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1513.82
+10,"Exact Canonical","BMS","CORRIDOR_RIGHT","CORRIDOR_RIGHT",true,"CORRIDOR_RIGHT",true,"CORRIDOR_MAIN",false,"CORRIDOR_RIGHT",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1338.82
+11,"Exact Canonical","FAS","LIFT_1","LIFT_1",true,"LIFT_1",true,"LIFT_1",true,"LIFT_1",true,"LIFT_1","PASSED",true,1499
+12,"Exact Canonical","FAS","LIFT_2","LIFT_2",true,"LIFT_2",true,"LIFT_1",false,"LIFT_1",false,"LIFT_1","PASSED",false,1422.75
+13,"Exact Canonical","BMS","STAIR_01","STAIR_01",true,"STAIR_01",true,"STAIR_01",true,"STAIR_01",true,"STAIR_01","PASSED",true,1295.11
+14,"Exact Canonical","BMS","EXIT_NORTH_103","EXIT_NORTH_103",true,"ROOM_103",false,"ROOM_103",false,"ROOM_101",false,"ROOM_101","PASSED",false,1422.22
+15,"Exact Canonical","BMS","EXIT_SOUTH_OFFICE","EXIT_SOUTH_OFFICE",true,"EXIT_SOUTH_OFFICE",true,"DEPT_OFFICE",false,"DEPT_OFFICE",false,"DEPT_OFFICE","PASSED",false,1329.64
+16,"BMS Zone Code","BMS","Z101","ROOM_101",true,"ROOM_101",true,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1531.75
+17,"BMS Zone Code","BMS","Z102","ROOM_102",true,"ROOM_102",true,"ROOM_102",true,"ROOM_102",true,"ROOM_102","PASSED",true,1387.59
+18,"BMS Zone Code","BMS","Z103","ROOM_103",true,"ROOM_103",true,"ROOM_103",true,"ROOM_103",true,"ROOM_103","PASSED",true,1281.55
+19,"BMS Zone Code","BMS","Z_STAFF","STAFF_ROOM",true,"STAFF_ROOM",true,"STAFF_ROOM",true,"STAFF_ROOM",true,"STAFF_ROOM","PASSED",true,1326.22
+20,"BMS Zone Code","BMS","Z_HOD1","HOD_CABIN_1",true,"HOD_CABIN_1",true,"HOD_CABIN_1",true,"HOD_CABIN_1",true,"HOD_CABIN_1","PASSED",true,1575.2
+21,"BMS Zone Code","BMS","Z_HOD2","HOD_CABIN_2",true,"HOD_CABIN_2",true,"HOD_CABIN_2",true,"HOD_CABIN_1",false,"HOD_CABIN_1","PASSED",false,1380.5
+22,"BMS Zone Code","BMS","Z_ADMIN","DEPT_OFFICE",true,"Z_ADMIN",false,"DEPT_OFFICE",true,"DEPT_OFFICE",true,"DEPT_OFFICE","PASSED",true,1502.17
+23,"BMS Zone Code","BMS","ZONE_CORR_MAIN","CORRIDOR_MAIN",true,"ZONE_CORR_MAIN",false,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN","PASSED",true,1237.68
+24,"BMS Zone Code","BMS","ZONE_CORR_L","CORRIDOR_LEFT",true,"ZONE_CORR_L",false,"UNKNOWN",false,"CORRIDOR_LEFT",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1469.62
+25,"BMS Zone Code","BMS","ZONE_CORR_R","CORRIDOR_RIGHT",true,"ZONE_CORR_R",false,"UNKNOWN",false,"CORRIDOR_RIGHT",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1245.08
+26,"BMS Zone Code","BMS","BMS-ZN-101-THERM","ROOM_101",false,"BMS-ZN-101-THERM",false,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1444.42
+27,"BMS Zone Code","BMS","BMS-ZN-102-THERM","ROOM_102",false,"BMS-ZN-102-THERM",false,"ROOM_102",true,"ROOM_101",false,"ROOM_101","PASSED",false,1476.65
+28,"BMS Zone Code","BMS","BMS-ZN-103-THERM","ROOM_103",false,"BMS-ZN-103-THERM",false,"ROOM_103",true,"ROOM_101",false,"ROOM_101","PASSED",false,1395.49
+29,"BMS Zone Code","BMS","BMS-STAIR-W-ZN","STAIR_01",false,"BMS-STAIR-W-ZN",false,"STAIR_01",true,"STAIR_01",true,"STAIR_01","PASSED",true,1499.36
+30,"BMS Zone Code","BMS","BMS-ELEV-SHAFT-01","LIFT_1",false,"BMS-ELEV-SHAFT-01",false,"UNKNOWN",false,"LIFT_1",true,"LIFT_1","PASSED",true,1533.71
+31,"FAS Device Code","FAS","R101","ROOM_101",true,"ROOM_101",true,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1488.79
+32,"FAS Device Code","FAS","R102","ROOM_102",true,"ROOM_102",true,"ROOM_102",true,"ROOM_101",false,"ROOM_101","PASSED",false,1362.64
+33,"FAS Device Code","FAS","R103","ROOM_103",true,"ROOM_103",true,"ROOM_103",true,"ROOM_101",false,"ROOM_101","PASSED",false,1278.47
+34,"FAS Device Code","FAS","FA_STAIR_A","STAIR_01",true,"FA_STAIR_A",false,"STAIR_01",true,"STAIR_01",true,"STAIR_01","PASSED",true,1472.46
+35,"FAS Device Code","FAS","FA_ELEV_1","LIFT_1",true,"FA_ELEV_1",false,"UNKNOWN",false,"LIFT_1",true,"LIFT_1","PASSED",true,1205.74
+36,"FAS Device Code","FAS","FA_ELEV_2","LIFT_2",true,"FA_ELEV_2",false,"UNKNOWN",false,"LIFT_2",true,"LIFT_2","PASSED",true,1594.26
+37,"FAS Device Code","FAS","FAS_LOOP1_DEV_101","ROOM_101",false,"ROOM_101",true,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1236.29
+38,"FAS Device Code","FAS","FAS_LOOP1_DEV_102","ROOM_102",false,"ROOM_102",true,"ROOM_102",true,"ROOM_102",true,"ROOM_102","PASSED",true,1272.46
+39,"FAS Device Code","FAS","FAS_LOOP1_DEV_103","ROOM_103",false,"ROOM_103",true,"ROOM_103",true,"ROOM_103",true,"ROOM_103","PASSED",true,1447.12
+40,"FAS Device Code","FAS","FAS_LOOP2_STAFF","STAFF_ROOM",false,"FAS_LOOP2_STAFF",false,"STAFF_ROOM",true,"STAFF_ROOM",true,"STAFF_ROOM","PASSED",true,1247.63
+41,"FAS Device Code","FAS","FAS_LOOP2_ADMIN","DEPT_OFFICE",false,"FAS_LOOP2_ADMIN",false,"DEPT_OFFICE",true,"DEPT_OFFICE",true,"DEPT_OFFICE","PASSED",true,1207.34
+42,"FAS Device Code","FAS","FAS_LOOP2_HOD1","HOD_CABIN_1",false,"FAS_LOOP2_HOD1",false,"UNKNOWN",false,"HOD_CABIN_2",false,"HOD_CABIN_2","PASSED",false,1372.88
+43,"FAS Device Code","FAS","FAS_LOOP2_HOD2","HOD_CABIN_2",false,"FAS_LOOP2_HOD2",false,"HOD_CABIN_2",true,"HOD_CABIN_2",true,"HOD_CABIN_2","PASSED",true,1542.67
+44,"FAS Device Code","FAS","FAS_CORR_CENTRAL_01","CORRIDOR_MAIN",false,"FAS_CORR_CENTRAL_01",false,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN","PASSED",true,1263.12
+45,"FAS Device Code","FAS","FAS_STAIRWELL_WEST_DET","STAIR_01",false,"FAS_STAIRWELL_WEST_DET",false,"STAIR_01",true,"STAIR_01",true,"STAIR_01","PASSED",true,1503.32
+46,"BIM IFC Space","BIM","IfcSpace_1003","ROOM_101",true,"UNKNOWN",false,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1261.95
+47,"BIM IFC Space","BIM","IfcSpace_1002","ROOM_102",true,"UNKNOWN",false,"ROOM_102",true,"ROOM_102",true,"ROOM_102","PASSED",true,1418.1
+48,"BIM IFC Space","BIM","IfcSpace_1001","ROOM_103",true,"UNKNOWN",false,"ROOM_103",true,"ROOM_103",true,"ROOM_103","PASSED",true,1449.74
+49,"BIM IFC Space","BIM","IfcSpace_1004","STAFF_ROOM",true,"UNKNOWN",false,"STAFF_ROOM",true,"STAFF_ROOM",true,"STAFF_ROOM","PASSED",true,1232.35
+50,"BIM IFC Space","BIM","IfcSpace_1005","CORRIDOR_MAIN",true,"UNKNOWN",false,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN","PASSED",true,1402.13
+51,"BIM IFC Space","BIM","IfcSpace_1008","DEPT_OFFICE",true,"UNKNOWN",false,"DEPT_OFFICE",true,"DEPT_OFFICE",true,"DEPT_OFFICE","PASSED",true,1288.78
+52,"BIM IFC Space","BIM","IfcSpace_1009","HOD_CABIN_2",true,"UNKNOWN",false,"HOD_CABIN_2",true,"HOD_CABIN_2",true,"HOD_CABIN_2","PASSED",true,1213.77
+53,"BIM IFC Space","BIM","IfcSpace_1010","HOD_CABIN_1",true,"UNKNOWN",false,"HOD_CABIN_1",true,"DEPT_OFFICE",false,"DEPT_OFFICE","PASSED",false,1424.3
+54,"BIM IFC Space","BIM","IFC_GUID_ROOM_101_AI","ROOM_101",false,"UNKNOWN",false,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1264
+55,"BIM IFC Space","BIM","IFC_GUID_ROOM_102_NET","ROOM_102",false,"UNKNOWN",false,"ROOM_102",true,"ROOM_101",false,"ROOM_101","PASSED",false,1414.23
+56,"BIM IFC Space","BIM","IFC_GUID_ROOM_103_EMB","ROOM_103",false,"UNKNOWN",false,"ROOM_103",true,"ROOM_101",false,"ROOM_101","PASSED",false,1440.59
+57,"BIM IFC Space","BIM","IFC_GUID_STAFF_LOUNGE","STAFF_ROOM",false,"UNKNOWN",false,"STAFF_ROOM",true,"STAFF_ROOM",true,"STAFF_ROOM","PASSED",true,1300.89
+58,"BIM IFC Space","BIM","IFC_GUID_DEPT_ADMIN","DEPT_OFFICE",false,"UNKNOWN",false,"DEPT_OFFICE",true,"DEPT_OFFICE",true,"DEPT_OFFICE","PASSED",true,1493.99
+59,"BIM IFC Space","BIM","IFC_GUID_STAIR_WEST","STAIR_01",false,"UNKNOWN",false,"STAIR_01",true,"STAIR_01",true,"STAIR_01","PASSED",true,1427.64
+60,"BIM IFC Space","BIM","IFC_GUID_ELEV_BANK_1","LIFT_1",false,"UNKNOWN",false,"UNKNOWN",false,"LIFT_1",true,"LIFT_1","PASSED",true,1213
+61,"Zero-Shot Synonym","BMS","NEXUS-AI-01","ROOM_101",false,"NEXUS-AI-01",false,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1597.3
+62,"Zero-Shot Synonym","BMS","DISTRIB-SYS-LAB","ROOM_102",false,"DISTRIB-SYS-LAB",false,"ROOM_102",true,"ROOM_102",true,"ROOM_102","PASSED",true,1471.37
+63,"Zero-Shot Synonym","FAS","HARDWARE-IOT-BAY","ROOM_103",false,"HARDWARE-IOT-BAY",false,"ROOM_103",true,"ROOM_103",true,"ROOM_103","PASSED",true,1434.61
+64,"Zero-Shot Synonym","OCCUPANCY","FACULTY-MEETING-LOUNGE","STAFF_ROOM",false,"FACULTY-MEETING-LOUNGE",false,"STAFF_ROOM",true,"ROOM_101",false,"ROOM_101","PASSED",false,1292.26
+65,"Zero-Shot Synonym","OCCUPANCY","ADMIN-ADMISSIONS-DESK","DEPT_OFFICE",false,"ADMIN-ADMISSIONS-DESK",false,"DEPT_OFFICE",true,"DEPT_OFFICE",true,"DEPT_OFFICE","PASSED",true,1563.05
+66,"Zero-Shot Synonym","BMS","CHIEF-HOD-SUITE","HOD_CABIN_1",false,"CHIEF-HOD-SUITE",false,"HOD_CABIN_1",true,"ROOM_101",false,"ROOM_101","PASSED",false,1570.45
+67,"Zero-Shot Synonym","BMS","DEPUTY-CHIEF-CABIN","HOD_CABIN_2",false,"DEPUTY-CHIEF-CABIN",false,"HOD_CABIN_2",true,"DEPT_OFFICE",false,"DEPT_OFFICE","PASSED",false,1401.81
+68,"Zero-Shot Synonym","FAS","CENTRAL-SPINE-HALLWAY","CORRIDOR_MAIN",false,"CENTRAL-SPINE-HALLWAY",false,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN","PASSED",true,1221.78
+69,"Zero-Shot Synonym","FAS","WEST-FIRE-ESCAPE","STAIR_01",false,"WEST-FIRE-ESCAPE",false,"STAIR_01",true,"STAIR_01",true,"STAIR_01","PASSED",true,1258.94
+70,"Zero-Shot Synonym","BMS","PASSENGER-LIFT-WEST","LIFT_1",false,"PASSENGER-LIFT-WEST",false,"LIFT_1",true,"CORRIDOR_MAIN",false,"CORRIDOR_MAIN","PASSED",false,1596.18
+71,"Zero-Shot Synonym","BMS","PASSENGER-LIFT-EAST","LIFT_2",false,"PASSENGER-LIFT-EAST",false,"LIFT_1",false,"LIFT_2",true,"LIFT_2","PASSED",true,1295.13
+72,"Zero-Shot Synonym","OCCUPANCY","VISION-AI-LAB-SPACE","ROOM_101",false,"VISION-AI-LAB-SPACE",false,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1549.4
+73,"Zero-Shot Synonym","OCCUPANCY","ROUTER-SWITCH-LAB","ROOM_102",false,"ROUTER-SWITCH-LAB",false,"UNKNOWN",false,"ROOM_102",true,"ROOM_102","PASSED",true,1526.39
+74,"Zero-Shot Synonym","OCCUPANCY","SENSORS-CIRCUITS-LAB","ROOM_103",false,"SENSORS-CIRCUITS-LAB",false,"ROOM_103",true,"ROOM_101",false,"ROOM_101","PASSED",false,1460.89
+75,"Zero-Shot Synonym","BMS","PROFESSORS-TEA-ROOM","STAFF_ROOM",false,"PROFESSORS-TEA-ROOM",false,"STAFF_ROOM",true,"ROOM_101",false,"ROOM_101","PASSED",false,1280.68
+76,"Zero-Shot Synonym","BMS","CLERK-STUDENT-AFFAIRS","DEPT_OFFICE",false,"CLERK-STUDENT-AFFAIRS",false,"UNKNOWN",false,"DEPT_OFFICE",true,"DEPT_OFFICE","PASSED",true,1542.07
+77,"Zero-Shot Synonym","FAS","LEFT-SIDE-CORRIDOR","CORRIDOR_LEFT",false,"LEFT-SIDE-CORRIDOR",false,"ROOM_103",false,"ROOM_103",false,"ROOM_103","PASSED",false,1355.21
+78,"Zero-Shot Synonym","FAS","RIGHT-WING-HALL","CORRIDOR_RIGHT",false,"RIGHT-WING-HALL",false,"UNKNOWN",false,"CORRIDOR_RIGHT",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1376.98
+79,"Zero-Shot Synonym","FAS","NORTH-EGRESS-DOOR-103","EXIT_NORTH_103",false,"ROOM_103",false,"ROOM_103",false,"ROOM_101",false,"ROOM_101","PASSED",false,1432.45
+80,"Zero-Shot Synonym","FAS","SOUTH-ADMIN-EXIT-DOOR","EXIT_SOUTH_OFFICE",false,"SOUTH-ADMIN-EXIT-DOOR",false,"DEPT_OFFICE",false,"DEPT_OFFICE",false,"DEPT_OFFICE","PASSED",false,1253.33
+81,"Zero-Shot Synonym","BMS","DEEP-LEARNING-CLUSTER-ROOM","ROOM_101",false,"DEEP-LEARNING-CLUSTER-ROOM",false,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1546.92
+82,"Zero-Shot Synonym","BMS","ETHERNET-NETWORKING-BAY","ROOM_102",false,"ETHERNET-NETWORKING-BAY",false,"UNKNOWN",false,"ROOM_101",false,"ROOM_101","PASSED",false,1230.15
+83,"Zero-Shot Synonym","BMS","ARDUINO-RASPBERRY-WORKBENCH","ROOM_103",false,"ARDUINO-RASPBERRY-WORKBENCH",false,"UNKNOWN",false,"ROOM_103",true,"ROOM_103","PASSED",true,1304.31
+84,"Zero-Shot Synonym","OCCUPANCY","LECTURERS-LOUNGE","STAFF_ROOM",false,"LECTURERS-LOUNGE",false,"UNKNOWN",false,"STAFF_ROOM",true,"STAFF_ROOM","PASSED",true,1483.94
+85,"Zero-Shot Synonym","OCCUPANCY","CHAIRPERSON-CABIN","HOD_CABIN_1",false,"CHAIRPERSON-CABIN",false,"HOD_CABIN_1",true,"ROOM_101",false,"ROOM_101","PASSED",false,1271.27
+86,"Ambiguous Entity","BMS","HOD-CABIN","AMBIGUOUS",false,"HOD-CABIN",false,"HOD_CABIN_2",false,"ROOM_101",false,"ROOM_101","PASSED",false,1545.14
+87,"Ambiguous Entity","FAS","ELEV-FOYER","AMBIGUOUS",false,"ELEV-FOYER",false,"UNKNOWN",false,"LIFT_1",false,"LIFT_1","PASSED",false,1312.04
+88,"Ambiguous Entity","BMS","CORRIDOR-GENERIC","AMBIGUOUS",false,"CORRIDOR-GENERIC",false,"CORRIDOR_MAIN",false,"AMBIGUOUS",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1400.31
+89,"Ambiguous Entity","FAS","LIFT-SHAFT-GENERIC","AMBIGUOUS",false,"LIFT-SHAFT-GENERIC",false,"UNKNOWN",false,"AMBIGUOUS",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1322.1
+90,"Ambiguous Entity","BMS","EXECUTIVE-OFFICE","AMBIGUOUS",false,"EXECUTIVE-OFFICE",false,"DEPT_OFFICE",false,"DEPT_OFFICE",false,"DEPT_OFFICE","PASSED",false,1401.09
+91,"Ambiguous Entity","OCCUPANCY","COMPUTING-LAB","AMBIGUOUS",false,"COMPUTING-LAB",false,"ROOM_101",false,"ROOM_101",false,"ROOM_101","PASSED",false,1387.38
+92,"Ambiguous Entity","FAS","HALLWAY-ZONE","AMBIGUOUS",false,"HALLWAY-ZONE",false,"CORRIDOR_MAIN",false,"AMBIGUOUS",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1434.92
+93,"Ambiguous Entity","BMS","ADMIN-WING","AMBIGUOUS",false,"ADMIN-WING",false,"DEPT_OFFICE",false,"DEPT_OFFICE",false,"DEPT_OFFICE","PASSED",false,1325.92
+94,"Ambiguous Entity","FAS","FIRE-EXIT-GENERAL","AMBIGUOUS",false,"FIRE-EXIT-GENERAL",false,"STAIR_01",false,"STAIR_01",false,"STAIR_01","PASSED",false,1512.24
+95,"Ambiguous Entity","OCCUPANCY","DEPARTMENT-LAB","AMBIGUOUS",false,"DEPARTMENT-LAB",false,"ROOM_101",false,"AMBIGUOUS",true,"UNKNOWN","NON_CANONICAL_REJECTED",false,1537.82
+96,"Unknown Entity","BMS","ZONE_X73","UNKNOWN",false,"ZONE_X73",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1500.12
+97,"Unknown Entity","FAS","BASEMENT_SUBSTATION_99","UNKNOWN",false,"BASEMENT_SUBSTATION_99",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1410.9
+98,"Unknown Entity","BMS","ROOF_SOLAR_INVERTER","UNKNOWN",false,"ROOF_SOLAR_INVERTER",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1599.2
+99,"Unknown Entity","IoT","CAMPUS_GATE_SOUTH","UNKNOWN",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1214.61
+100,"Unknown Entity","BMS","CAFETERIA_KITCHEN_FLOOR_G","UNKNOWN",false,"CAFETERIA_KITCHEN_FLOOR_G",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1450.79
+101,"Unknown Entity","FAS","AUDITORIUM_BALCONY_F3","UNKNOWN",false,"AUDITORIUM_BALCONY_F3",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1324.92
+102,"Unknown Entity","BMS","CHEMISTRY_FUME_HOOD_B2","UNKNOWN",false,"CHEMISTRY_FUME_HOOD_B2",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1310.59
+103,"Unknown Entity","IoT","WATER_TANK_PUMP_STATION","UNKNOWN",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1551.3
+104,"Unknown Entity","BMS","LIBRARY_STACKS_FLOOR4","UNKNOWN",false,"LIBRARY_STACKS_FLOOR4",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1577.84
+105,"Unknown Entity","FAS","HOSTEL_BLOCK_D_ROOM_402","UNKNOWN",false,"HOSTEL_BLOCK_D_ROOM_402",false,"ROOM_101",false,"ROOM_101",false,"ROOM_101","PASSED",false,1211.94
+106,"Malformed Input","BMS","???_CORRUPT_NULL_###","UNKNOWN",false,"???_CORRUPT_NULL_###",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1484.54
+107,"Malformed Input","FAS","0xDEADBEEF_PACKET_ERR","UNKNOWN",false,"0xDEADBEEF_PACKET_ERR",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1280.75
+108,"Malformed Input","IoT","NaN-UNDEFINED-ZONE","UNKNOWN",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1364.91
+109,"Malformed Input","BMS","---***===***---","UNKNOWN",false,"---***===***---",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1537.09
+110,"Malformed Input","FAS","NULL_POINTER_SENSOR","UNKNOWN",false,"NULL_POINTER_SENSOR",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1307.49
+111,"Malformed Input","OCCUPANCY","///...///","UNKNOWN",false,"///...///",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1394.14
+112,"Malformed Input","BMS","EMPTY_STRING_PAYLOAD","UNKNOWN",false,"EMPTY_STRING_PAYLOAD",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1519.12
+113,"Malformed Input","IoT","GARBAGE_COLLECTION_DUMP","UNKNOWN",false,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN",true,"UNKNOWN","UNKNOWN_ENTITY",true,1426.34
+114,"Unit Conversion","IoT","ROOM_101","ROOM_101",false,"UNKNOWN",false,"ROOM_101",true,"ROOM_101",true,"ROOM_101","PASSED",true,1380.6
+115,"Unit Conversion","IoT","ROOM_102","ROOM_102",false,"UNKNOWN",false,"ROOM_102",true,"ROOM_101",false,"ROOM_101","PASSED",false,1471.37
+116,"Unit Conversion","IoT","ROOM_103","ROOM_103",false,"UNKNOWN",false,"ROOM_103",true,"ROOM_101",false,"ROOM_101","PASSED",false,1215.19
+117,"Unit Conversion","BMS","STAFF_ROOM","STAFF_ROOM",false,"STAFF_ROOM",true,"STAFF_ROOM",true,"ROOM_101",false,"ROOM_101","PASSED",false,1237.98
+118,"Unit Conversion","FAS","CORRIDOR_MAIN","CORRIDOR_MAIN",false,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN",true,"CORRIDOR_MAIN","PASSED",true,1310.95
+119,"Unit Conversion","BMS","HOD_CABIN_1","HOD_CABIN_1",false,"HOD_CABIN_1",true,"HOD_CABIN_2",false,"HOD_CABIN_1",true,"HOD_CABIN_1","PASSED",true,1212.05
+120,"Unit Conversion","IoT","STAIR_01","STAIR_01",false,"UNKNOWN",false,"UNKNOWN",false,"STAIR_01",true,"STAIR_01","PASSED",true,1383.58

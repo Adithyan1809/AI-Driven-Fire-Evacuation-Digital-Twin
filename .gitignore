@@ -1,0 +1,45 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+.env.local
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build and Dist
+dist/
+dist-ssr/
+build/
+**/dist/
+
+# IDE and Editors
+.cursor/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Runtime / Dynamic state
+data/semantic_memory.json
+benchmarks/generated/
+benchmark-output/
+**/*.local
+
+# Temporary duplicate files
+output.docx
+

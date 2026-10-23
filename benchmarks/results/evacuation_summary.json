@@ -1,0 +1,62 @@
+[
+  {
+    "scenarioId": 1,
+    "scenario": "Scenario 1: Room 101 Fire with Corridor Spread",
+    "dynamicMeanTimeS": 14.9,
+    "staticMeanTimeS": 27.6,
+    "dynamicSuccessRatePct": 100,
+    "staticSuccessRatePct": 100,
+    "dynamicUnsafeTraversals": 12.9,
+    "staticUnsafeTraversals": 13.4,
+    "dynamicBlockedOccupants": 0,
+    "staticBlockedOccupants": 0
+  },
+  {
+    "scenarioId": 2,
+    "scenario": "Scenario 2: Choke-Point Fire Blocking Main Corridor",
+    "dynamicMeanTimeS": 8.9,
+    "staticMeanTimeS": 8.9,
+    "dynamicSuccessRatePct": 40.7,
+    "staticSuccessRatePct": 40.7,
+    "dynamicUnsafeTraversals": 0,
+    "staticUnsafeTraversals": 0,
+    "dynamicBlockedOccupants": 29.6,
+    "staticBlockedOccupants": 30
+  },
+  {
+    "scenarioId": 3,
+    "scenario": "Scenario 3: Corridor Smoke Obscuration & Degradation",
+    "dynamicMeanTimeS": 14.9,
+    "staticMeanTimeS": 28.9,
+    "dynamicSuccessRatePct": 100,
+    "staticSuccessRatePct": 100,
+    "dynamicUnsafeTraversals": 24.1,
+    "staticUnsafeTraversals": 24.6,
+    "dynamicBlockedOccupants": 0,
+    "staticBlockedOccupants": 0
+  },
+  {
+    "scenarioId": 4,
+    "scenario": "Scenario 4: Multi-Zone Expanding Hazard",
+    "dynamicMeanTimeS": 14.9,
+    "staticMeanTimeS": 27.6,
+    "dynamicSuccessRatePct": 100,
+    "staticSuccessRatePct": 100,
+    "dynamicUnsafeTraversals": 12.9,
+    "staticUnsafeTraversals": 13.4,
+    "dynamicBlockedOccupants": 0,
+    "staticBlockedOccupants": 0
+  },
+  {
+    "scenarioId": 5,
+    "scenario": "Scenario 5: Telemetry Uncertainty (Quarantined Sensors)",
+    "dynamicMeanTimeS": 14.9,
+    "staticMeanTimeS": 28.2,
+    "dynamicSuccessRatePct": 100,
+    "staticSuccessRatePct": 100,
+    "dynamicUnsafeTraversals": 18.6,
+    "staticUnsafeTraversals": 19.2,
+    "dynamicBlockedOccupants": 0,
+    "staticBlockedOccupants": 0
+  }
+]

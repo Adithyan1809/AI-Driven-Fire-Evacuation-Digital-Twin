@@ -1,0 +1,11 @@
+ScenarioId,ScenarioName,RoutingMode,MeanEvacTimeS,TimeSD,SuccessRatePct,SafeEvacRatePct,UnsafeOccupants,BlockedOccupants,MeanReroutes,RouteLatencyMs
+1,"Scenario 1: Room 101 Fire with Corridor Spread",DYNAMIC_DT,15.84,0.84,100,74,13,0,2,0.052
+1,"Scenario 1: Room 101 Fire with Corridor Spread",STATIC_NEAREST,15.84,0.84,100,74,13,0,0.0,0.00
+2,"Scenario 2: Choke-Point Fire Blocking Main Corridor",DYNAMIC_DT,6.36,0.46,31.07,31.1,0,34.47,13,0.052
+2,"Scenario 2: Choke-Point Fire Blocking Main Corridor",STATIC_NEAREST,6.36,0.46,31.07,31.1,0,34.47,0.0,0.00
+3,"Scenario 3: Corridor Smoke Obscuration & Degradation",DYNAMIC_DT,15.84,0.84,100,74,13,0,2,0.052
+3,"Scenario 3: Corridor Smoke Obscuration & Degradation",STATIC_NEAREST,15.84,0.84,100,74,13,0,0.0,0.00
+4,"Scenario 4: Multi-Zone Expanding Hazard",DYNAMIC_DT,15.84,0.84,100,55.3,22.33,0,2,0.052
+4,"Scenario 4: Multi-Zone Expanding Hazard",STATIC_NEAREST,15.84,0.84,100,55.3,22.33,0,0.0,0.00
+5,"Scenario 5: Telemetry Uncertainty (Quarantined Sensors)",DYNAMIC_DT,15.84,0.84,100,74,13,0,2,0.052
+5,"Scenario 5: Telemetry Uncertainty (Quarantined Sensors)",STATIC_NEAREST,15.84,0.84,100,74,13,0,0.0,0.00

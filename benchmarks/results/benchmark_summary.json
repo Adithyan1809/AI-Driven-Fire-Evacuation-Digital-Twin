@@ -1,0 +1,321 @@
+{
+  "metadata": {
+    "timestamp": "2026-08-30T22:29:24.043Z",
+    "model": "gemini-1.5-flash",
+    "totalTestCases": 120,
+    "evacuationTrialsPerScenario": 30,
+    "scenariosEvaluated": 5
+  },
+  "ablation": {
+    "methodA_Rules": {
+      "total": 120,
+      "accuracyPct": 45,
+      "precisionPct": 100,
+      "recallPct": 26.1,
+      "f1Score": 41.4,
+      "tp": 24,
+      "fp": 0,
+      "tn": 28,
+      "fn": 68,
+      "invalidAdmissions": 0,
+      "invalidAdmissionRatePct": 0,
+      "meanLatencyMs": 0.26,
+      "p50LatencyMs": 0.118,
+      "p95LatencyMs": 0.396
+    },
+    "methodB_Heuristics": {
+      "total": 120,
+      "accuracyPct": 69.2,
+      "precisionPct": 100,
+      "recallPct": 10.9,
+      "f1Score": 19.7,
+      "tp": 10,
+      "fp": 0,
+      "tn": 28,
+      "fn": 82,
+      "invalidAdmissions": 0,
+      "invalidAdmissionRatePct": 0,
+      "meanLatencyMs": 0.67,
+      "p50LatencyMs": 0.24,
+      "p95LatencyMs": 1.277
+    },
+    "methodC_RawGemini": {
+      "total": 120,
+      "accuracyPct": 23.3,
+      "precisionPct": 100,
+      "recallPct": 0,
+      "f1Score": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 28,
+      "fn": 92,
+      "invalidAdmissions": 0,
+      "invalidAdmissionRatePct": 0,
+      "meanLatencyMs": 1,
+      "p50LatencyMs": 1,
+      "p95LatencyMs": 1
+    },
+    "methodD_GeminiPlusFirewall": {
+      "total": 120,
+      "accuracyPct": 23.3,
+      "precisionPct": 100,
+      "recallPct": 0,
+      "f1Score": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 28,
+      "fn": 92,
+      "invalidAdmissions": 0,
+      "invalidAdmissionRatePct": 0,
+      "meanLatencyMs": 1,
+      "p50LatencyMs": 1,
+      "p95LatencyMs": 1
+    }
+  },
+  "generalization": {
+    "seen": {
+      "rules": {
+        "total": 39,
+        "accuracyPct": 59,
+        "precisionPct": 100,
+        "recallPct": 53.8,
+        "f1Score": 70,
+        "tp": 21,
+        "fp": 0,
+        "tn": 0,
+        "fn": 18,
+        "invalidAdmissions": 0,
+        "invalidAdmissionRatePct": 0,
+        "meanLatencyMs": 0.51,
+        "p50LatencyMs": 0.089,
+        "p95LatencyMs": 3.886
+      },
+      "proposed": {
+        "total": 39,
+        "accuracyPct": 0,
+        "precisionPct": 100,
+        "recallPct": 0,
+        "f1Score": 0,
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 39,
+        "invalidAdmissions": 0,
+        "invalidAdmissionRatePct": 0,
+        "meanLatencyMs": 1,
+        "p50LatencyMs": 1,
+        "p95LatencyMs": 1
+      }
+    },
+    "unseen": {
+      "rules": {
+        "total": 81,
+        "accuracyPct": 38.3,
+        "precisionPct": 100,
+        "recallPct": 5.7,
+        "f1Score": 10.8,
+        "tp": 3,
+        "fp": 0,
+        "tn": 28,
+        "fn": 50,
+        "invalidAdmissions": 0,
+        "invalidAdmissionRatePct": 0,
+        "meanLatencyMs": 0.15,
+        "p50LatencyMs": 0.118,
+        "p95LatencyMs": 0.316
+      },
+      "proposed": {
+        "total": 81,
+        "accuracyPct": 34.6,
+        "precisionPct": 100,
+        "recallPct": 0,
+        "f1Score": 0,
+        "tp": 0,
+        "fp": 0,
+        "tn": 28,
+        "fn": 53,
+        "invalidAdmissions": 0,
+        "invalidAdmissionRatePct": 0,
+        "meanLatencyMs": 1,
+        "p50LatencyMs": 1,
+        "p95LatencyMs": 1
+      }
+    }
+  },
+  "safetyFirewall": [
+    {
+      "id": 1,
+      "name": "Gemini Timeout / Network Abort",
+      "firewallStatus": "UNKNOWN_ENTITY",
+      "admittedToDT": false,
+      "firewallReason": "Identified as UNKNOWN. Quarantined by firewall.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 2,
+      "name": "Gemini API Error 429/503",
+      "firewallStatus": "UNKNOWN_ENTITY",
+      "admittedToDT": false,
+      "firewallReason": "Identified as UNKNOWN. Quarantined by firewall.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 3,
+      "name": "Malformed JSON Payload",
+      "firewallStatus": "UNKNOWN_ENTITY",
+      "admittedToDT": false,
+      "firewallReason": "Identified as UNKNOWN. Quarantined by firewall.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 4,
+      "name": "Unknown Telemetry Field",
+      "firewallStatus": "REJECTED_UNKNOWN_FIELD",
+      "admittedToDT": false,
+      "firewallReason": "Unknown telemetry attribute. Quarantined.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 5,
+      "name": "Unknown Room Identifier",
+      "firewallStatus": "UNKNOWN_ENTITY",
+      "admittedToDT": false,
+      "firewallReason": "Identified as UNKNOWN. Quarantined by firewall.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 6,
+      "name": "Hallucinated Non-Existent Space",
+      "firewallStatus": "REJECTED_UNKNOWN",
+      "admittedToDT": false,
+      "firewallReason": "Hallucinated or non-existent entity \"ROOM_999_BOGUS\". Quarantined.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 7,
+      "name": "Physically Impossible Value",
+      "firewallStatus": "REJECTED_OUT_OF_BOUNDS",
+      "admittedToDT": false,
+      "firewallReason": "Physically impossible value (9999°C). Quarantined.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 8,
+      "name": "Contradictory / Ambiguous Candidate",
+      "firewallStatus": "LOW_CONFIDENCE",
+      "admittedToDT": false,
+      "firewallReason": "Confidence 72% < 75%. Held for review.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 9,
+      "name": "Sub-Threshold Confidence (<0.75)",
+      "firewallStatus": "LOW_CONFIDENCE",
+      "admittedToDT": false,
+      "firewallReason": "Confidence 61% < 75%. Held for review.",
+      "passedSafetyCheck": true
+    },
+    {
+      "id": 10,
+      "name": "Stale Telemetry Timeout (>3.0s)",
+      "firewallStatus": "ACCEPTED",
+      "admittedToDT": true,
+      "firewallReason": "Passed all 7 deterministic firewall checks.",
+      "passedSafetyCheck": true
+    }
+  ],
+  "evacuationSummary": [
+    {
+      "scenario": "Scenario 1: Room 101 Fire with Corridor Spread",
+      "Dynamic Mean Time (s)": 14.9,
+      "Static Mean Time (s)": 27.6,
+      "Dynamic Success (%)": 100,
+      "Static Success (%)": 100,
+      "Dynamic Unsafe (#)": 12.9,
+      "Static Unsafe (#)": 13.4,
+      "Dynamic Blocked (#)": 0,
+      "Static Blocked (#)": 0
+    },
+    {
+      "scenario": "Scenario 2: Choke-Point Fire Blocking Main Corridor",
+      "Dynamic Mean Time (s)": 8.9,
+      "Static Mean Time (s)": 8.9,
+      "Dynamic Success (%)": 40.7,
+      "Static Success (%)": 40.7,
+      "Dynamic Unsafe (#)": 0,
+      "Static Unsafe (#)": 0,
+      "Dynamic Blocked (#)": 29.6,
+      "Static Blocked (#)": 30
+    },
+    {
+      "scenario": "Scenario 3: Corridor Smoke Obscuration & Degradation",
+      "Dynamic Mean Time (s)": 14.9,
+      "Static Mean Time (s)": 28.9,
+      "Dynamic Success (%)": 100,
+      "Static Success (%)": 100,
+      "Dynamic Unsafe (#)": 24.1,
+      "Static Unsafe (#)": 24.6,
+      "Dynamic Blocked (#)": 0,
+      "Static Blocked (#)": 0
+    },
+    {
+      "scenario": "Scenario 4: Multi-Zone Expanding Hazard",
+      "Dynamic Mean Time (s)": 14.9,
+      "Static Mean Time (s)": 27.6,
+      "Dynamic Success (%)": 100,
+      "Static Success (%)": 100,
+      "Dynamic Unsafe (#)": 12.9,
+      "Static Unsafe (#)": 13.4,
+      "Dynamic Blocked (#)": 0,
+      "Static Blocked (#)": 0
+    },
+    {
+      "scenario": "Scenario 5: Telemetry Uncertainty (Quarantined Sensors)",
+      "Dynamic Mean Time (s)": 14.9,
+      "Static Mean Time (s)": 28.2,
+      "Dynamic Success (%)": 100,
+      "Static Success (%)": 100,
+      "Dynamic Unsafe (#)": 18.6,
+      "Static Unsafe (#)": 19.2,
+      "Dynamic Blocked (#)": 0,
+      "Static Blocked (#)": 0
+    }
+  ],
+  "gammaSensitivity": [
+    {
+      "gamma": 1.5,
+      "meanEvacuationTimeS": 19.1,
+      "meanUnsafeTraversals": 20.4,
+      "meanRouteRecalculations": 2,
+      "successRatePct": 100
+    },
+    {
+      "gamma": 2,
+      "meanEvacuationTimeS": 19.1,
+      "meanUnsafeTraversals": 20.4,
+      "meanRouteRecalculations": 2,
+      "successRatePct": 100
+    },
+    {
+      "gamma": 2.5,
+      "meanEvacuationTimeS": 19.1,
+      "meanUnsafeTraversals": 20.4,
+      "meanRouteRecalculations": 2,
+      "successRatePct": 100
+    },
+    {
+      "gamma": 3.5,
+      "meanEvacuationTimeS": 15.1,
+      "meanUnsafeTraversals": 12.8,
+      "meanRouteRecalculations": 2,
+      "successRatePct": 100
+    },
+    {
+      "gamma": 5,
+      "meanEvacuationTimeS": 15.1,
+      "meanUnsafeTraversals": 12.8,
+      "meanRouteRecalculations": 2,
+      "successRatePct": 100
+    }
+  ]
+}

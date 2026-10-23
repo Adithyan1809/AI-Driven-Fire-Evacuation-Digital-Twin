@@ -1,0 +1,29 @@
+{
+  "actualGeminiColdCallMs": {
+    "N": 53,
+    "mean": 2769.91,
+    "median": 2131.32,
+    "p95": 5997.26,
+    "min": 999.26,
+    "max": 8074.60,
+    "description": "True live HTTP REST round-trip latency to Google Gemini API over broadband connection"
+  },
+  "semanticMemoryCacheMs": {
+    "N": 67,
+    "mean": 0.005,
+    "median": 0.004,
+    "p95": 0.012,
+    "description": "In-memory JavaScript Map hash resolution for warm/known schema lookups"
+  },
+  "deterministicPathMs": {
+    "heuristicMatching": { "mean": 0.56, "median": 0.39, "p95": 1.77 },
+    "ruleLookup": { "mean": 0.12, "median": 0.11, "p95": 0.29 },
+    "validationFirewall": 0.012,
+    "stateMutation": 0.045,
+    "dijkstraRouteRecalculation": 0.052
+  },
+  "endToEndTieredMiddlewareMs": {
+    "coldOnboardingPath": 2770.02,
+    "warmRuntimePath": 0.062
+  }
+}

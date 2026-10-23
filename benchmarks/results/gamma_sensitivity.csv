@@ -1,0 +1,6 @@
+Gamma,MeanEvacuationTimeS,MeanUnsafeTraversals,MeanRouteRecalcs,SuccessRatePct
+1.5,19.1,20.4,3,100
+2,19.1,20.4,3,100
+2.5,19.1,20.4,3,100
+3.5,15.1,6,3,100
+5,15.1,6,3,100

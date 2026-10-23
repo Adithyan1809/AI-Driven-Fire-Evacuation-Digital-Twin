@@ -1,0 +1,10 @@
+{
+  "benchmark_seed": 42,
+  "run_timestamp": "2026-08-30T22:29:24.041Z",
+  "gemini_model": "gemini-1.5-flash",
+  "building_version": "Building-A v1.0",
+  "total_cases": 120,
+  "seen_schema_cases": 102,
+  "unseen_schema_cases": 18,
+  "node_version": "v22.18.0"
+}

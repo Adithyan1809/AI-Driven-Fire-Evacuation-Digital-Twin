@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Gemini Timeout / Network Abort",
+    "firewallStatus": "UNKNOWN_ENTITY",
+    "admittedToDT": false,
+    "firewallReason": "Identified as UNKNOWN. Quarantined by firewall.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 2,
+    "name": "Gemini API Error 429/503",
+    "firewallStatus": "UNKNOWN_ENTITY",
+    "admittedToDT": false,
+    "firewallReason": "Identified as UNKNOWN. Quarantined by firewall.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 3,
+    "name": "Malformed JSON Payload",
+    "firewallStatus": "UNKNOWN_ENTITY",
+    "admittedToDT": false,
+    "firewallReason": "Identified as UNKNOWN. Quarantined by firewall.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 4,
+    "name": "Unknown Telemetry Field",
+    "firewallStatus": "REJECTED_UNKNOWN_FIELD",
+    "admittedToDT": false,
+    "firewallReason": "Unknown telemetry attribute. Quarantined.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 5,
+    "name": "Unknown Room Identifier",
+    "firewallStatus": "UNKNOWN_ENTITY",
+    "admittedToDT": false,
+    "firewallReason": "Identified as UNKNOWN. Quarantined by firewall.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 6,
+    "name": "Hallucinated Non-Existent Space",
+    "firewallStatus": "REJECTED_UNKNOWN",
+    "admittedToDT": false,
+    "firewallReason": "Hallucinated or non-existent entity \"ROOM_999_BOGUS\". Quarantined.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 7,
+    "name": "Physically Impossible Value",
+    "firewallStatus": "REJECTED_OUT_OF_BOUNDS",
+    "admittedToDT": false,
+    "firewallReason": "Physically impossible value (9999°C). Quarantined.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 8,
+    "name": "Contradictory / Ambiguous Candidate",
+    "firewallStatus": "LOW_CONFIDENCE",
+    "admittedToDT": false,
+    "firewallReason": "Confidence 72% < 75%. Held for review.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 9,
+    "name": "Sub-Threshold Confidence (<0.75)",
+    "firewallStatus": "LOW_CONFIDENCE",
+    "admittedToDT": false,
+    "firewallReason": "Confidence 61% < 75%. Held for review.",
+    "handledBy": "7_POINT_VALIDATION_FIREWALL",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  },
+  {
+    "id": 10,
+    "name": "Stale Telemetry Timeout (>3.0s)",
+    "firewallStatus": "ACCEPTED",
+    "admittedToDT": true,
+    "firewallReason": "Passed all 7 deterministic firewall checks.",
+    "handledBy": "DOWNSTREAM_SENSOR_TIMESTAMP_GATING",
+    "authoritativeDTUpdated": false,
+    "passedSafetyBoundary": true
+  }
+]

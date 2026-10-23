@@ -1,0 +1,14 @@
+{
+  "code_version": "2.1.0-freeze",
+  "benchmark_script": "scripts/reconcile_all_experiments.mjs",
+  "dataset_version": "v2.1-audited-zero-leakage",
+  "timestamp": "2026-08-30T18:43:55.455Z",
+  "semantic_cases": 120,
+  "seen_cases": 39,
+  "unseen_cases": 81,
+  "evacuation_instances": 150,
+  "routing_conditions": 2,
+  "evacuation_executions": 300,
+  "gamma_runs": 100,
+  "failure_cases": 10
+}

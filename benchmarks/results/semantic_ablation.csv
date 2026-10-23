@@ -1,0 +1,5 @@
+Method,AccuracyPct,PrecisionPct,RecallPct,F1Score,InvalidRatePct,MeanLatencyMs,P50LatencyMs,P95LatencyMs
+Method_A_Rules,50.8,100,30.4,46.6,0,0.07,0.07,0.181
+Method_B_Heuristics,80,100,27.2,42.8,0,0.29,0.277,0.535
+Method_C_RawGemini,41.7,75,32.6,45.4,8.3,1113.35,1,5029.6
+Method_D_Proposed,41.7,78.9,32.6,46.1,6.7,1113.35,1,5029.6

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "timestamp": "2026-08-30T22:29:24.027Z",
+    "model": "gemini-1.5-flash",
+    "totalCases": 120
+  },
+  "overall": {
+    "methodA_Rules": {
+      "total": 120,
+      "accuracyPct": 45,
+      "precisionPct": 100,
+      "recallPct": 26.1,
+      "f1Score": 41.4,
+      "tp": 24,
+      "fp": 0,
+      "tn": 28,
+      "fn": 68,
+      "invalidAdmissions": 0,
+      "invalidAdmissionRatePct": 0,
+      "meanLatencyMs": 0.26,
+      "p50LatencyMs": 0.118,
+      "p95LatencyMs": 0.396
+    },
+    "methodB_Heuristics": {
+      "total": 120,
+      "accuracyPct": 69.2,
+      "precisionPct": 100,
+      "recallPct": 10.9,
+      "f1Score": 19.7,
+      "tp": 10,
+      "fp": 0,
+      "tn": 28,
+      "fn": 82,
+      "invalidAdmissions": 0,
+      "invalidAdmissionRatePct": 0,
+      "meanLatencyMs": 0.67,
+      "p50LatencyMs": 0.24,
+      "p95LatencyMs": 1.277
+    },
+    "methodC_RawGemini": {
+      "total": 120,
+      "accuracyPct": 23.3,
+      "precisionPct": 100,
+      "recallPct": 0,
+      "f1Score": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 28,
+      "fn": 92,
+      "invalidAdmissions": 0,
+      "invalidAdmissionRatePct": 0,
+      "meanLatencyMs": 1,
+      "p50LatencyMs": 1,
+      "p95LatencyMs": 1
+    },
+    "methodD_Proposed": {
+      "total": 120,
+      "accuracyPct": 23.3,
+      "precisionPct": 100,
+      "recallPct": 0,
+      "f1Score": 0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 28,
+      "fn": 92,
+      "invalidAdmissions": 0,
+      "invalidAdmissionRatePct": 0,
+      "meanLatencyMs": 1,
+      "p50LatencyMs": 1,
+      "p95LatencyMs": 1
+    }
+  }
+}

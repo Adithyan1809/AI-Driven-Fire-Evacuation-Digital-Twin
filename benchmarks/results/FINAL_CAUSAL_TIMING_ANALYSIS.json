@@ -1,0 +1,42 @@
+[
+  {
+    "scenario": "Scenario 1: Room 101 Fire with Corridor Spread",
+    "hazardActivationTimeS": 4,
+    "firstRouteChangeTimeS": 4,
+    "medianArrivalAffectedNodeS": 4.4,
+    "medianExitTimeS": 17.3,
+    "explanation": "Agents traversed corridor (median t=3.2s) prior to spread at t=4.0s"
+  },
+  {
+    "scenario": "Scenario 2: Choke-Point Fire Blocking Main Corridor",
+    "hazardActivationTimeS": 2,
+    "firstRouteChangeTimeS": 2,
+    "medianArrivalAffectedNodeS": 4.4,
+    "medianExitTimeS": 17.3,
+    "explanation": "Corridor severed at t=2.0s; agents on isolated side blocked identically"
+  },
+  {
+    "scenario": "Scenario 3: Corridor Smoke Obscuration & Degradation",
+    "hazardActivationTimeS": 4,
+    "firstRouteChangeTimeS": 4,
+    "medianArrivalAffectedNodeS": 4.4,
+    "medianExitTimeS": 17.3,
+    "explanation": "Agents traversed corridor (median t=3.2s) prior to spread at t=4.0s"
+  },
+  {
+    "scenario": "Scenario 4: Multi-Zone Expanding Hazard",
+    "hazardActivationTimeS": 4,
+    "firstRouteChangeTimeS": 4,
+    "medianArrivalAffectedNodeS": 4.4,
+    "medianExitTimeS": 17.3,
+    "explanation": "Agents traversed corridor (median t=3.2s) prior to spread at t=4.0s"
+  },
+  {
+    "scenario": "Scenario 5: Telemetry Uncertainty (Quarantined Sensors)",
+    "hazardActivationTimeS": 4,
+    "firstRouteChangeTimeS": 4,
+    "medianArrivalAffectedNodeS": 4.4,
+    "medianExitTimeS": 17.3,
+    "explanation": "Agents traversed corridor (median t=3.2s) prior to spread at t=4.0s"
+  }
+]

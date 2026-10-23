@@ -1,0 +1,46 @@
+[
+  {
+    "hazardActivationTimeS": 0.5,
+    "dynamicMeanTimeS": 16.3,
+    "staticMeanTimeS": 16.3,
+    "dynamicUnsafeOccupants": 14,
+    "staticUnsafeOccupants": 14,
+    "dynamicSafeEvacRatePct": 72,
+    "staticSafeEvacRatePct": 72,
+    "unsafeReductionPct": 0,
+    "totalPathChanges": 1360
+  },
+  {
+    "hazardActivationTimeS": 1,
+    "dynamicMeanTimeS": 15.9,
+    "staticMeanTimeS": 15.9,
+    "dynamicUnsafeOccupants": 14,
+    "staticUnsafeOccupants": 14,
+    "dynamicSafeEvacRatePct": 72,
+    "staticSafeEvacRatePct": 72,
+    "unsafeReductionPct": 0,
+    "totalPathChanges": 1360
+  },
+  {
+    "hazardActivationTimeS": 2,
+    "dynamicMeanTimeS": 14.9,
+    "staticMeanTimeS": 14.9,
+    "dynamicUnsafeOccupants": 13.7,
+    "staticUnsafeOccupants": 13.7,
+    "dynamicSafeEvacRatePct": 72.6,
+    "staticSafeEvacRatePct": 72.6,
+    "unsafeReductionPct": 0,
+    "totalPathChanges": 1370
+  },
+  {
+    "hazardActivationTimeS": 4,
+    "dynamicMeanTimeS": 15.1,
+    "staticMeanTimeS": 15.1,
+    "dynamicUnsafeOccupants": 14.8,
+    "staticUnsafeOccupants": 14.8,
+    "dynamicSafeEvacRatePct": 70.4,
+    "staticSafeEvacRatePct": 70.4,
+    "unsafeReductionPct": 0,
+    "totalPathChanges": 1772
+  }
+]
