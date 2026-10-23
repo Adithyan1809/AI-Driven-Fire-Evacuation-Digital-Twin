@@ -1,37 +1,37 @@
 [
   {
     "gamma": 1.5,
-    "meanEvacuationTimeS": 19.1,
-    "meanUnsafeTraversals": 20.4,
-    "meanRouteRecalculations": 2,
+    "meanEvacuationTimeS": 15.5,
+    "meanUnsafeTraversals": 17.1,
+    "meanRouteRecalculations": 3,
     "successRatePct": 100
   },
   {
     "gamma": 2,
-    "meanEvacuationTimeS": 19.1,
-    "meanUnsafeTraversals": 20.4,
-    "meanRouteRecalculations": 2,
+    "meanEvacuationTimeS": 15.5,
+    "meanUnsafeTraversals": 17.1,
+    "meanRouteRecalculations": 3,
     "successRatePct": 100
   },
   {
     "gamma": 2.5,
-    "meanEvacuationTimeS": 19.1,
-    "meanUnsafeTraversals": 20.4,
-    "meanRouteRecalculations": 2,
+    "meanEvacuationTimeS": 15.5,
+    "meanUnsafeTraversals": 17.1,
+    "meanRouteRecalculations": 3,
     "successRatePct": 100
   },
   {
     "gamma": 3.5,
-    "meanEvacuationTimeS": 15.1,
-    "meanUnsafeTraversals": 12.8,
-    "meanRouteRecalculations": 2,
+    "meanEvacuationTimeS": 15.5,
+    "meanUnsafeTraversals": 17.1,
+    "meanRouteRecalculations": 3,
     "successRatePct": 100
   },
   {
     "gamma": 5,
-    "meanEvacuationTimeS": 15.1,
-    "meanUnsafeTraversals": 12.8,
-    "meanRouteRecalculations": 2,
+    "meanEvacuationTimeS": 15.5,
+    "meanUnsafeTraversals": 17.1,
+    "meanRouteRecalculations": 3,
     "successRatePct": 100
   }
 ]

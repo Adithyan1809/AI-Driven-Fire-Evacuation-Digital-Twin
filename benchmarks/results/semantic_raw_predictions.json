@@ -17,8 +17,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.348,
-    "latency_heuristics_ms": 0.778,
+    "latency_rules_ms": 0.376,
+    "latency_heuristics_ms": 0.466,
     "latency_gemini_ms": 1
   },
   {
@@ -39,8 +39,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.048,
-    "latency_heuristics_ms": 0.24,
+    "latency_rules_ms": 0.014,
+    "latency_heuristics_ms": 0.119,
     "latency_gemini_ms": 1
   },
   {
@@ -61,8 +61,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.021,
-    "latency_heuristics_ms": 0.215,
+    "latency_rules_ms": 0.008,
+    "latency_heuristics_ms": 0.093,
     "latency_gemini_ms": 1
   },
   {
@@ -83,8 +83,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.023,
-    "latency_heuristics_ms": 0.237,
+    "latency_rules_ms": 0.006,
+    "latency_heuristics_ms": 0.078,
     "latency_gemini_ms": 1
   },
   {
@@ -105,8 +105,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.043,
-    "latency_heuristics_ms": 0.262,
+    "latency_rules_ms": 0.007,
+    "latency_heuristics_ms": 0.085,
     "latency_gemini_ms": 1
   },
   {
@@ -127,8 +127,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.018,
-    "latency_heuristics_ms": 1.35,
+    "latency_rules_ms": 0.005,
+    "latency_heuristics_ms": 0.845,
     "latency_gemini_ms": 1
   },
   {
@@ -149,8 +149,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.07,
-    "latency_heuristics_ms": 0.341,
+    "latency_rules_ms": 0.013,
+    "latency_heuristics_ms": 0.108,
     "latency_gemini_ms": 1
   },
   {
@@ -171,8 +171,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.297,
-    "latency_heuristics_ms": 0.584,
+    "latency_rules_ms": 0.007,
+    "latency_heuristics_ms": 0.079,
     "latency_gemini_ms": 1
   },
   {
@@ -193,8 +193,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.11,
-    "latency_heuristics_ms": 1.277,
+    "latency_rules_ms": 0.006,
+    "latency_heuristics_ms": 0.073,
     "latency_gemini_ms": 1
   },
   {
@@ -215,8 +215,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 3.886,
-    "latency_heuristics_ms": 0.592,
+    "latency_rules_ms": 0.807,
+    "latency_heuristics_ms": 0.098,
     "latency_gemini_ms": 1
   },
   {
@@ -237,8 +237,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.21,
-    "latency_heuristics_ms": 0.518,
+    "latency_rules_ms": 0.023,
+    "latency_heuristics_ms": 0.083,
     "latency_gemini_ms": 1
   },
   {
@@ -259,8 +259,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.066,
-    "latency_heuristics_ms": 0.581,
+    "latency_rules_ms": 0.004,
+    "latency_heuristics_ms": 0.075,
     "latency_gemini_ms": 1
   },
   {
@@ -281,8 +281,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.031,
-    "latency_heuristics_ms": 0.144,
+    "latency_rules_ms": 0.003,
+    "latency_heuristics_ms": 0.124,
     "latency_gemini_ms": 1
   },
   {
@@ -303,8 +303,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.23,
-    "latency_heuristics_ms": 0.122,
+    "latency_rules_ms": 0.681,
+    "latency_heuristics_ms": 0.096,
     "latency_gemini_ms": 1
   },
   {
@@ -325,8 +325,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.161,
-    "latency_heuristics_ms": 0.13,
+    "latency_rules_ms": 0.582,
+    "latency_heuristics_ms": 0.091,
     "latency_gemini_ms": 1
   },
   {
@@ -347,8 +347,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.011,
-    "latency_heuristics_ms": 0.119,
+    "latency_rules_ms": 0.002,
+    "latency_heuristics_ms": 0.08,
     "latency_gemini_ms": 1
   },
   {
@@ -369,8 +369,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.007,
-    "latency_heuristics_ms": 0.103,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.6,
     "latency_gemini_ms": 1
   },
   {
@@ -391,8 +391,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.008,
-    "latency_heuristics_ms": 0.107,
+    "latency_rules_ms": 0.005,
+    "latency_heuristics_ms": 0.083,
     "latency_gemini_ms": 1
   },
   {
@@ -413,8 +413,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.079,
-    "latency_heuristics_ms": 0.369,
+    "latency_rules_ms": 0.003,
+    "latency_heuristics_ms": 0.087,
     "latency_gemini_ms": 1
   },
   {
@@ -435,8 +435,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.011,
-    "latency_heuristics_ms": 0.549,
+    "latency_rules_ms": 0.002,
+    "latency_heuristics_ms": 0.073,
     "latency_gemini_ms": 1
   },
   {
@@ -457,8 +457,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.015,
-    "latency_heuristics_ms": 0.332,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.071,
     "latency_gemini_ms": 1
   },
   {
@@ -469,18 +469,18 @@
     "source_field": "Z_ADMIN",
     "ground_truth_entity": "DEPT_OFFICE",
     "ground_truth_attribute": "temperature",
-    "rules_prediction": "Z_ADMIN",
+    "rules_prediction": "DEPT_OFFICE",
     "heuristic_prediction": "DEPT_OFFICE",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.166,
-    "latency_heuristics_ms": 0.284,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.067,
     "latency_gemini_ms": 1
   },
   {
@@ -501,8 +501,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.146,
-    "latency_heuristics_ms": 2.619,
+    "latency_rules_ms": 0.497,
+    "latency_heuristics_ms": 0.08,
     "latency_gemini_ms": 1
   },
   {
@@ -514,17 +514,17 @@
     "ground_truth_entity": "CORRIDOR_LEFT",
     "ground_truth_attribute": "temperature",
     "rules_prediction": "ZONE_CORR_L",
-    "heuristic_prediction": "UNKNOWN",
+    "heuristic_prediction": "CORRIDOR_LEFT",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
     "correct_method_a": false,
-    "correct_method_b": false,
+    "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.244,
-    "latency_heuristics_ms": 0.329,
+    "latency_rules_ms": 0.68,
+    "latency_heuristics_ms": 0.2,
     "latency_gemini_ms": 1
   },
   {
@@ -545,8 +545,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.193,
-    "latency_heuristics_ms": 0.279,
+    "latency_rules_ms": 0.664,
+    "latency_heuristics_ms": 0.102,
     "latency_gemini_ms": 1
   },
   {
@@ -567,8 +567,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.186,
-    "latency_heuristics_ms": 0.52,
+    "latency_rules_ms": 1.093,
+    "latency_heuristics_ms": 0.116,
     "latency_gemini_ms": 1
   },
   {
@@ -589,8 +589,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.274,
-    "latency_heuristics_ms": 0.332,
+    "latency_rules_ms": 0.498,
+    "latency_heuristics_ms": 0.101,
     "latency_gemini_ms": 1
   },
   {
@@ -611,8 +611,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.231,
-    "latency_heuristics_ms": 0.627,
+    "latency_rules_ms": 0.45,
+    "latency_heuristics_ms": 0.114,
     "latency_gemini_ms": 1
   },
   {
@@ -633,8 +633,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.389,
-    "latency_heuristics_ms": 0.351,
+    "latency_rules_ms": 0.439,
+    "latency_heuristics_ms": 0.103,
     "latency_gemini_ms": 1
   },
   {
@@ -655,8 +655,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.292,
-    "latency_heuristics_ms": 0.321,
+    "latency_rules_ms": 0.517,
+    "latency_heuristics_ms": 0.121,
     "latency_gemini_ms": 1
   },
   {
@@ -677,8 +677,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.089,
-    "latency_heuristics_ms": 2.182,
+    "latency_rules_ms": 0.004,
+    "latency_heuristics_ms": 0.385,
     "latency_gemini_ms": 1
   },
   {
@@ -699,8 +699,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.019,
-    "latency_heuristics_ms": 0.853,
+    "latency_rules_ms": 0.003,
+    "latency_heuristics_ms": 0.081,
     "latency_gemini_ms": 1
   },
   {
@@ -721,8 +721,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.015,
-    "latency_heuristics_ms": 0.268,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.078,
     "latency_gemini_ms": 1
   },
   {
@@ -743,8 +743,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 10.968,
-    "latency_heuristics_ms": 1.546,
+    "latency_rules_ms": 0.556,
+    "latency_heuristics_ms": 0.078,
     "latency_gemini_ms": 1
   },
   {
@@ -755,18 +755,18 @@
     "source_field": "FA_ELEV_1",
     "ground_truth_entity": "LIFT_1",
     "ground_truth_attribute": "fire_alarm",
-    "rules_prediction": "FA_ELEV_1",
+    "rules_prediction": "LIFT_1",
     "heuristic_prediction": "LIFT_1",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.262,
-    "latency_heuristics_ms": 41.841,
+    "latency_rules_ms": 0.4,
+    "latency_heuristics_ms": 0.163,
     "latency_gemini_ms": 1
   },
   {
@@ -777,18 +777,18 @@
     "source_field": "FA_ELEV_2",
     "ground_truth_entity": "LIFT_2",
     "ground_truth_attribute": "fire_alarm",
-    "rules_prediction": "FA_ELEV_2",
+    "rules_prediction": "LIFT_2",
     "heuristic_prediction": "LIFT_2",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.738,
-    "latency_heuristics_ms": 0.778,
+    "latency_rules_ms": 0.247,
+    "latency_heuristics_ms": 0.076,
     "latency_gemini_ms": 1
   },
   {
@@ -809,8 +809,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.252,
-    "latency_heuristics_ms": 0.279,
+    "latency_rules_ms": 0.539,
+    "latency_heuristics_ms": 0.097,
     "latency_gemini_ms": 1
   },
   {
@@ -831,8 +831,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.231,
-    "latency_heuristics_ms": 0.251,
+    "latency_rules_ms": 0.444,
+    "latency_heuristics_ms": 0.087,
     "latency_gemini_ms": 1
   },
   {
@@ -853,8 +853,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.191,
-    "latency_heuristics_ms": 0.189,
+    "latency_rules_ms": 0.766,
+    "latency_heuristics_ms": 0.097,
     "latency_gemini_ms": 1
   },
   {
@@ -875,8 +875,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.15,
-    "latency_heuristics_ms": 0.232,
+    "latency_rules_ms": 0.44,
+    "latency_heuristics_ms": 0.083,
     "latency_gemini_ms": 1
   },
   {
@@ -897,8 +897,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.167,
-    "latency_heuristics_ms": 0.26,
+    "latency_rules_ms": 0.425,
+    "latency_heuristics_ms": 0.08,
     "latency_gemini_ms": 1
   },
   {
@@ -919,8 +919,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.164,
-    "latency_heuristics_ms": 0.331,
+    "latency_rules_ms": 0.48,
+    "latency_heuristics_ms": 0.08,
     "latency_gemini_ms": 1
   },
   {
@@ -941,8 +941,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.1,
-    "latency_heuristics_ms": 0.25,
+    "latency_rules_ms": 0.781,
+    "latency_heuristics_ms": 0.107,
     "latency_gemini_ms": 1
   },
   {
@@ -963,8 +963,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.101,
-    "latency_heuristics_ms": 0.185,
+    "latency_rules_ms": 0.538,
+    "latency_heuristics_ms": 0.094,
     "latency_gemini_ms": 1
   },
   {
@@ -985,8 +985,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.118,
-    "latency_heuristics_ms": 0.292,
+    "latency_rules_ms": 0.436,
+    "latency_heuristics_ms": 0.085,
     "latency_gemini_ms": 1
   },
   {
@@ -997,18 +997,18 @@
     "source_field": "IfcSpace_1003",
     "ground_truth_entity": "ROOM_101",
     "ground_truth_attribute": "bim_space_type",
-    "rules_prediction": "IfcSpace_1003",
+    "rules_prediction": "ROOM_101",
     "heuristic_prediction": "ROOM_101",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.125,
-    "latency_heuristics_ms": 0.246,
+    "latency_rules_ms": 0.033,
+    "latency_heuristics_ms": 0.081,
     "latency_gemini_ms": 1
   },
   {
@@ -1019,18 +1019,18 @@
     "source_field": "IfcSpace_1002",
     "ground_truth_entity": "ROOM_102",
     "ground_truth_attribute": "bim_space_type",
-    "rules_prediction": "IfcSpace_1002",
+    "rules_prediction": "ROOM_102",
     "heuristic_prediction": "ROOM_102",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.089,
-    "latency_heuristics_ms": 0.149,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.09,
     "latency_gemini_ms": 1
   },
   {
@@ -1041,18 +1041,18 @@
     "source_field": "IfcSpace_1001",
     "ground_truth_entity": "ROOM_103",
     "ground_truth_attribute": "bim_space_type",
-    "rules_prediction": "IfcSpace_1001",
+    "rules_prediction": "ROOM_103",
     "heuristic_prediction": "ROOM_103",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.045,
-    "latency_heuristics_ms": 0.075,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.073,
     "latency_gemini_ms": 1
   },
   {
@@ -1063,18 +1063,18 @@
     "source_field": "IfcSpace_1004",
     "ground_truth_entity": "STAFF_ROOM",
     "ground_truth_attribute": "bim_space_type",
-    "rules_prediction": "IfcSpace_1004",
+    "rules_prediction": "STAFF_ROOM",
     "heuristic_prediction": "STAFF_ROOM",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.194,
-    "latency_heuristics_ms": 0.236,
+    "latency_rules_ms": 0.002,
+    "latency_heuristics_ms": 0.077,
     "latency_gemini_ms": 1
   },
   {
@@ -1085,18 +1085,18 @@
     "source_field": "IfcSpace_1005",
     "ground_truth_entity": "CORRIDOR_MAIN",
     "ground_truth_attribute": "bim_space_type",
-    "rules_prediction": "IfcSpace_1005",
+    "rules_prediction": "CORRIDOR_MAIN",
     "heuristic_prediction": "CORRIDOR_MAIN",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.517,
-    "latency_heuristics_ms": 0.247,
+    "latency_rules_ms": 0.002,
+    "latency_heuristics_ms": 0.072,
     "latency_gemini_ms": 1
   },
   {
@@ -1107,18 +1107,18 @@
     "source_field": "IfcSpace_1008",
     "ground_truth_entity": "DEPT_OFFICE",
     "ground_truth_attribute": "bim_space_type",
-    "rules_prediction": "IfcSpace_1008",
+    "rules_prediction": "DEPT_OFFICE",
     "heuristic_prediction": "DEPT_OFFICE",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.134,
-    "latency_heuristics_ms": 0.402,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.069,
     "latency_gemini_ms": 1
   },
   {
@@ -1129,18 +1129,18 @@
     "source_field": "IfcSpace_1009",
     "ground_truth_entity": "HOD_CABIN_2",
     "ground_truth_attribute": "bim_space_type",
-    "rules_prediction": "IfcSpace_1009",
+    "rules_prediction": "HOD_CABIN_2",
     "heuristic_prediction": "HOD_CABIN_2",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.134,
-    "latency_heuristics_ms": 0.219,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.069,
     "latency_gemini_ms": 1
   },
   {
@@ -1151,18 +1151,18 @@
     "source_field": "IfcSpace_1010",
     "ground_truth_entity": "HOD_CABIN_1",
     "ground_truth_attribute": "bim_space_type",
-    "rules_prediction": "IfcSpace_1010",
+    "rules_prediction": "HOD_CABIN_1",
     "heuristic_prediction": "HOD_CABIN_1",
     "gemini_prediction": "UNKNOWN",
     "gemini_firewall_prediction": "UNKNOWN",
     "firewall_status": "UNKNOWN_ENTITY",
     "accepted": false,
-    "correct_method_a": false,
+    "correct_method_a": true,
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.054,
-    "latency_heuristics_ms": 0.082,
+    "latency_rules_ms": 0.001,
+    "latency_heuristics_ms": 0.073,
     "latency_gemini_ms": 1
   },
   {
@@ -1183,8 +1183,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.11,
-    "latency_heuristics_ms": 0.18,
+    "latency_rules_ms": 0.801,
+    "latency_heuristics_ms": 0.101,
     "latency_gemini_ms": 1
   },
   {
@@ -1205,8 +1205,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.316,
-    "latency_heuristics_ms": 0.258,
+    "latency_rules_ms": 0.529,
+    "latency_heuristics_ms": 0.095,
     "latency_gemini_ms": 1
   },
   {
@@ -1227,8 +1227,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.193,
-    "latency_heuristics_ms": 0.289,
+    "latency_rules_ms": 0.441,
+    "latency_heuristics_ms": 0.083,
     "latency_gemini_ms": 1
   },
   {
@@ -1249,8 +1249,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.208,
-    "latency_heuristics_ms": 0.436,
+    "latency_rules_ms": 0.43,
+    "latency_heuristics_ms": 0.082,
     "latency_gemini_ms": 1
   },
   {
@@ -1271,8 +1271,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.178,
-    "latency_heuristics_ms": 0.279,
+    "latency_rules_ms": 0.42,
+    "latency_heuristics_ms": 0.079,
     "latency_gemini_ms": 1
   },
   {
@@ -1293,8 +1293,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.198,
-    "latency_heuristics_ms": 0.696,
+    "latency_rules_ms": 1.2,
+    "latency_heuristics_ms": 0.132,
     "latency_gemini_ms": 1
   },
   {
@@ -1315,8 +1315,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.265,
-    "latency_heuristics_ms": 0.649,
+    "latency_rules_ms": 0.586,
+    "latency_heuristics_ms": 0.122,
     "latency_gemini_ms": 1
   },
   {
@@ -1337,8 +1337,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.083,
-    "latency_heuristics_ms": 0.094,
+    "latency_rules_ms": 0.676,
+    "latency_heuristics_ms": 0.124,
     "latency_gemini_ms": 1
   },
   {
@@ -1359,8 +1359,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.116,
-    "latency_heuristics_ms": 0.142,
+    "latency_rules_ms": 0.611,
+    "latency_heuristics_ms": 0.127,
     "latency_gemini_ms": 1
   },
   {
@@ -1381,8 +1381,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.056,
-    "latency_heuristics_ms": 0.061,
+    "latency_rules_ms": 1.304,
+    "latency_heuristics_ms": 0.111,
     "latency_gemini_ms": 1
   },
   {
@@ -1403,8 +1403,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.043,
-    "latency_heuristics_ms": 0.058,
+    "latency_rules_ms": 0.484,
+    "latency_heuristics_ms": 0.09,
     "latency_gemini_ms": 1
   },
   {
@@ -1425,8 +1425,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.048,
-    "latency_heuristics_ms": 0.255,
+    "latency_rules_ms": 0.463,
+    "latency_heuristics_ms": 0.084,
     "latency_gemini_ms": 1
   },
   {
@@ -1447,8 +1447,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.054,
-    "latency_heuristics_ms": 0.071,
+    "latency_rules_ms": 0.431,
+    "latency_heuristics_ms": 0.083,
     "latency_gemini_ms": 1
   },
   {
@@ -1469,8 +1469,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.195,
-    "latency_heuristics_ms": 0.268,
+    "latency_rules_ms": 0.42,
+    "latency_heuristics_ms": 0.347,
     "latency_gemini_ms": 1
   },
   {
@@ -1491,8 +1491,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.126,
-    "latency_heuristics_ms": 0.2,
+    "latency_rules_ms": 0.494,
+    "latency_heuristics_ms": 0.091,
     "latency_gemini_ms": 1
   },
   {
@@ -1513,8 +1513,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.14,
-    "latency_heuristics_ms": 0.196,
+    "latency_rules_ms": 0.426,
+    "latency_heuristics_ms": 0.083,
     "latency_gemini_ms": 1
   },
   {
@@ -1535,8 +1535,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.112,
-    "latency_heuristics_ms": 0.177,
+    "latency_rules_ms": 0.399,
+    "latency_heuristics_ms": 0.08,
     "latency_gemini_ms": 1
   },
   {
@@ -1557,8 +1557,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.169,
-    "latency_heuristics_ms": 0.185,
+    "latency_rules_ms": 0.395,
+    "latency_heuristics_ms": 0.079,
     "latency_gemini_ms": 1
   },
   {
@@ -1579,8 +1579,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.126,
-    "latency_heuristics_ms": 0.201,
+    "latency_rules_ms": 0.662,
+    "latency_heuristics_ms": 0.092,
     "latency_gemini_ms": 1
   },
   {
@@ -1601,8 +1601,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.094,
-    "latency_heuristics_ms": 0.113,
+    "latency_rules_ms": 0.444,
+    "latency_heuristics_ms": 0.086,
     "latency_gemini_ms": 1
   },
   {
@@ -1623,8 +1623,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.063,
-    "latency_heuristics_ms": 0.102,
+    "latency_rules_ms": 0.614,
+    "latency_heuristics_ms": 0.096,
     "latency_gemini_ms": 1
   },
   {
@@ -1645,8 +1645,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.063,
-    "latency_heuristics_ms": 0.107,
+    "latency_rules_ms": 0.327,
+    "latency_heuristics_ms": 0.1,
     "latency_gemini_ms": 1
   },
   {
@@ -1667,7 +1667,7 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.056,
+    "latency_rules_ms": 0.317,
     "latency_heuristics_ms": 0.081,
     "latency_gemini_ms": 1
   },
@@ -1689,8 +1689,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.038,
-    "latency_heuristics_ms": 0.056,
+    "latency_rules_ms": 0.693,
+    "latency_heuristics_ms": 0.096,
     "latency_gemini_ms": 1
   },
   {
@@ -1711,8 +1711,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.036,
-    "latency_heuristics_ms": 0.055,
+    "latency_rules_ms": 0.337,
+    "latency_heuristics_ms": 0.083,
     "latency_gemini_ms": 1
   },
   {
@@ -1733,8 +1733,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.396,
-    "latency_heuristics_ms": 0.892,
+    "latency_rules_ms": 0.329,
+    "latency_heuristics_ms": 0.086,
     "latency_gemini_ms": 1
   },
   {
@@ -1755,8 +1755,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.67,
-    "latency_heuristics_ms": 0.186,
+    "latency_rules_ms": 0.305,
+    "latency_heuristics_ms": 0.097,
     "latency_gemini_ms": 1
   },
   {
@@ -1777,8 +1777,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.252,
-    "latency_heuristics_ms": 0.501,
+    "latency_rules_ms": 0.306,
+    "latency_heuristics_ms": 0.08,
     "latency_gemini_ms": 1
   },
   {
@@ -1799,8 +1799,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.19,
-    "latency_heuristics_ms": 0.337,
+    "latency_rules_ms": 0.569,
+    "latency_heuristics_ms": 0.091,
     "latency_gemini_ms": 1
   },
   {
@@ -1821,8 +1821,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.202,
-    "latency_heuristics_ms": 0.357,
+    "latency_rules_ms": 0.347,
+    "latency_heuristics_ms": 0.084,
     "latency_gemini_ms": 1
   },
   {
@@ -1843,8 +1843,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.161,
-    "latency_heuristics_ms": 0.258,
+    "latency_rules_ms": 0.313,
+    "latency_heuristics_ms": 0.091,
     "latency_gemini_ms": 1
   },
   {
@@ -1865,8 +1865,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.138,
-    "latency_heuristics_ms": 0.193,
+    "latency_rules_ms": 0.312,
+    "latency_heuristics_ms": 0.078,
     "latency_gemini_ms": 1
   },
   {
@@ -1887,8 +1887,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.118,
-    "latency_heuristics_ms": 0.172,
+    "latency_rules_ms": 0.301,
+    "latency_heuristics_ms": 0.08,
     "latency_gemini_ms": 1
   },
   {
@@ -1909,8 +1909,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.112,
-    "latency_heuristics_ms": 0.16,
+    "latency_rules_ms": 0.307,
+    "latency_heuristics_ms": 0.366,
     "latency_gemini_ms": 1
   },
   {
@@ -1931,8 +1931,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.102,
-    "latency_heuristics_ms": 0.147,
+    "latency_rules_ms": 0.321,
+    "latency_heuristics_ms": 0.079,
     "latency_gemini_ms": 1
   },
   {
@@ -1953,8 +1953,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.093,
-    "latency_heuristics_ms": 0.137,
+    "latency_rules_ms": 0.301,
+    "latency_heuristics_ms": 0.077,
     "latency_gemini_ms": 1
   },
   {
@@ -1975,8 +1975,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.089,
-    "latency_heuristics_ms": 0.133,
+    "latency_rules_ms": 0.297,
+    "latency_heuristics_ms": 0.074,
     "latency_gemini_ms": 1
   },
   {
@@ -1997,8 +1997,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.247,
-    "latency_heuristics_ms": 0.594,
+    "latency_rules_ms": 0.321,
+    "latency_heuristics_ms": 0.091,
     "latency_gemini_ms": 1
   },
   {
@@ -2019,8 +2019,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.191,
-    "latency_heuristics_ms": 0.28,
+    "latency_rules_ms": 0.304,
+    "latency_heuristics_ms": 0.076,
     "latency_gemini_ms": 1
   },
   {
@@ -2041,8 +2041,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.16,
-    "latency_heuristics_ms": 0.244,
+    "latency_rules_ms": 0.664,
+    "latency_heuristics_ms": 0.091,
     "latency_gemini_ms": 1
   },
   {
@@ -2063,8 +2063,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.158,
-    "latency_heuristics_ms": 0.251,
+    "latency_rules_ms": 0.334,
+    "latency_heuristics_ms": 0.081,
     "latency_gemini_ms": 1
   },
   {
@@ -2085,8 +2085,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.241,
-    "latency_heuristics_ms": 0.309,
+    "latency_rules_ms": 0.311,
+    "latency_heuristics_ms": 0.093,
     "latency_gemini_ms": 1
   },
   {
@@ -2107,8 +2107,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.166,
-    "latency_heuristics_ms": 0.273,
+    "latency_rules_ms": 0.305,
+    "latency_heuristics_ms": 0.075,
     "latency_gemini_ms": 1
   },
   {
@@ -2129,8 +2129,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.134,
-    "latency_heuristics_ms": 0.179,
+    "latency_rules_ms": 0.323,
+    "latency_heuristics_ms": 0.084,
     "latency_gemini_ms": 1
   },
   {
@@ -2151,8 +2151,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.102,
-    "latency_heuristics_ms": 0.156,
+    "latency_rules_ms": 0.73,
+    "latency_heuristics_ms": 0.087,
     "latency_gemini_ms": 1
   },
   {
@@ -2173,8 +2173,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.098,
-    "latency_heuristics_ms": 0.276,
+    "latency_rules_ms": 0.327,
+    "latency_heuristics_ms": 0.078,
     "latency_gemini_ms": 1
   },
   {
@@ -2195,8 +2195,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.096,
-    "latency_heuristics_ms": 0.139,
+    "latency_rules_ms": 0.299,
+    "latency_heuristics_ms": 0.076,
     "latency_gemini_ms": 1
   },
   {
@@ -2217,8 +2217,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.108,
-    "latency_heuristics_ms": 0.146,
+    "latency_rules_ms": 0.296,
+    "latency_heuristics_ms": 0.076,
     "latency_gemini_ms": 1
   },
   {
@@ -2239,8 +2239,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.092,
-    "latency_heuristics_ms": 0.139,
+    "latency_rules_ms": 0.301,
+    "latency_heuristics_ms": 0.08,
     "latency_gemini_ms": 1
   },
   {
@@ -2261,8 +2261,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.226,
-    "latency_heuristics_ms": 0.296,
+    "latency_rules_ms": 0.306,
+    "latency_heuristics_ms": 0.099,
     "latency_gemini_ms": 1
   },
   {
@@ -2283,8 +2283,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.329,
-    "latency_heuristics_ms": 0.233,
+    "latency_rules_ms": 0.374,
+    "latency_heuristics_ms": 0.086,
     "latency_gemini_ms": 1
   },
   {
@@ -2305,8 +2305,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.137,
-    "latency_heuristics_ms": 0.248,
+    "latency_rules_ms": 0.351,
+    "latency_heuristics_ms": 0.082,
     "latency_gemini_ms": 1
   },
   {
@@ -2327,8 +2327,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.142,
-    "latency_heuristics_ms": 0.167,
+    "latency_rules_ms": 0.355,
+    "latency_heuristics_ms": 0.084,
     "latency_gemini_ms": 1
   },
   {
@@ -2349,8 +2349,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.109,
-    "latency_heuristics_ms": 0.154,
+    "latency_rules_ms": 0.356,
+    "latency_heuristics_ms": 0.082,
     "latency_gemini_ms": 1
   },
   {
@@ -2371,8 +2371,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.098,
-    "latency_heuristics_ms": 0.143,
+    "latency_rules_ms": 0.361,
+    "latency_heuristics_ms": 0.096,
     "latency_gemini_ms": 1
   },
   {
@@ -2393,8 +2393,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.037,
-    "latency_heuristics_ms": 0.071,
+    "latency_rules_ms": 0.724,
+    "latency_heuristics_ms": 0.086,
     "latency_gemini_ms": 1
   },
   {
@@ -2415,8 +2415,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.032,
-    "latency_heuristics_ms": 0.061,
+    "latency_rules_ms": 0.325,
+    "latency_heuristics_ms": 0.076,
     "latency_gemini_ms": 1
   },
   {
@@ -2437,8 +2437,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.042,
-    "latency_heuristics_ms": 0.052,
+    "latency_rules_ms": 0.303,
+    "latency_heuristics_ms": 0.074,
     "latency_gemini_ms": 1
   },
   {
@@ -2459,8 +2459,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.058,
-    "latency_heuristics_ms": 0.113,
+    "latency_rules_ms": 0.314,
+    "latency_heuristics_ms": 0.072,
     "latency_gemini_ms": 1
   },
   {
@@ -2481,8 +2481,8 @@
     "correct_method_b": true,
     "correct_method_c": true,
     "correct_method_d": true,
-    "latency_rules_ms": 0.038,
-    "latency_heuristics_ms": 0.051,
+    "latency_rules_ms": 0.295,
+    "latency_heuristics_ms": 0.078,
     "latency_gemini_ms": 1
   },
   {
@@ -2503,8 +2503,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.022,
-    "latency_heuristics_ms": 0.058,
+    "latency_rules_ms": 0.316,
+    "latency_heuristics_ms": 0.097,
     "latency_gemini_ms": 1
   },
   {
@@ -2525,8 +2525,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.071,
-    "latency_heuristics_ms": 0.364,
+    "latency_rules_ms": 0.367,
+    "latency_heuristics_ms": 0.088,
     "latency_gemini_ms": 1
   },
   {
@@ -2547,8 +2547,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.057,
-    "latency_heuristics_ms": 0.11,
+    "latency_rules_ms": 0.364,
+    "latency_heuristics_ms": 0.102,
     "latency_gemini_ms": 1
   },
   {
@@ -2569,8 +2569,8 @@
     "correct_method_b": true,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.052,
-    "latency_heuristics_ms": 0.139,
+    "latency_rules_ms": 0.35,
+    "latency_heuristics_ms": 0.088,
     "latency_gemini_ms": 1
   },
   {
@@ -2591,8 +2591,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.066,
-    "latency_heuristics_ms": 0.17,
+    "latency_rules_ms": 0.361,
+    "latency_heuristics_ms": 0.09,
     "latency_gemini_ms": 1
   },
   {
@@ -2613,8 +2613,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.048,
-    "latency_heuristics_ms": 0.109,
+    "latency_rules_ms": 0.361,
+    "latency_heuristics_ms": 0.086,
     "latency_gemini_ms": 1
   },
   {
@@ -2635,8 +2635,8 @@
     "correct_method_b": false,
     "correct_method_c": false,
     "correct_method_d": false,
-    "latency_rules_ms": 0.059,
-    "latency_heuristics_ms": 0.12,
+    "latency_rules_ms": 0.65,
+    "latency_heuristics_ms": 0.094,
     "latency_gemini_ms": 1
   }
 ]

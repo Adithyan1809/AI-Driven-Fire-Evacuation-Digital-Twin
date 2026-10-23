@@ -2,23 +2,23 @@
   "seenPartition_N39": {
     "methodA": {
       "total": 39,
-      "accuracyPct": 59,
+      "accuracyPct": 87.2,
       "precisionPct": 100,
-      "recallPct": 53.8,
-      "f1Score": 70,
-      "tp": 21,
+      "recallPct": 82.1,
+      "f1Score": 90.2,
+      "tp": 32,
       "fp": 0,
       "tn": 0,
-      "fn": 18,
+      "fn": 7,
       "invalidAdmissions": 0,
       "invalidAdmissionRatePct": 0,
-      "meanLatencyMs": 0.51,
-      "p50LatencyMs": 0.089,
-      "p95LatencyMs": 3.886
+      "meanLatencyMs": 0.14,
+      "p50LatencyMs": 0.005,
+      "p95LatencyMs": 0.681
     },
     "methodB": {
       "total": 39,
-      "accuracyPct": 82.1,
+      "accuracyPct": 84.6,
       "precisionPct": 100,
       "recallPct": 25.6,
       "f1Score": 40.8,
@@ -28,9 +28,9 @@
       "fn": 29,
       "invalidAdmissions": 0,
       "invalidAdmissionRatePct": 0,
-      "meanLatencyMs": 1.58,
-      "p50LatencyMs": 0.284,
-      "p95LatencyMs": 2.619
+      "meanLatencyMs": 0.14,
+      "p50LatencyMs": 0.081,
+      "p95LatencyMs": 0.6
     },
     "methodC": {
       "total": 39,
@@ -78,9 +78,9 @@
       "fn": 50,
       "invalidAdmissions": 0,
       "invalidAdmissionRatePct": 0,
-      "meanLatencyMs": 0.15,
-      "p50LatencyMs": 0.118,
-      "p95LatencyMs": 0.316
+      "meanLatencyMs": 0.46,
+      "p50LatencyMs": 0.395,
+      "p95LatencyMs": 0.781
     },
     "methodB": {
       "total": 81,
@@ -94,9 +94,9 @@
       "fn": 53,
       "invalidAdmissions": 0,
       "invalidAdmissionRatePct": 0,
-      "meanLatencyMs": 0.23,
-      "p50LatencyMs": 0.189,
-      "p95LatencyMs": 0.594
+      "meanLatencyMs": 0.1,
+      "p50LatencyMs": 0.086,
+      "p95LatencyMs": 0.124
     },
     "methodC": {
       "total": 81,

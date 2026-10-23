@@ -5,14 +5,14 @@
     "p95": 1
   },
   "heuristicMatchingMs": {
-    "mean": 0.67,
-    "p50": 0.24,
-    "p95": 1.277
+    "mean": 0.11,
+    "p50": 0.086,
+    "p95": 0.347
   },
   "ruleLookupMs": {
-    "mean": 0.26,
-    "p50": 0.118,
-    "p95": 0.396
+    "mean": 0.36,
+    "p50": 0.35,
+    "p95": 0.781
   },
   "validationFirewallMs": 0.012,
   "semanticMemoryCacheHitMs": 0.005,

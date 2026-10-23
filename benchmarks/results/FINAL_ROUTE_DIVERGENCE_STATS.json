@@ -1,13 +1,13 @@
 {
   "total_scenario_instances": 150,
-  "graph_recalculations": 630,
-  "route_recalculations": 630,
-  "occupant_reroutes_evaluated": 31500,
-  "actual_path_changes": 22870,
-  "runs_with_path_change": 150,
+  "graph_recalculations": 360,
+  "route_recalculations": 360,
+  "occupant_reroutes_evaluated": 18000,
+  "actual_path_changes": 2462,
+  "runs_with_path_change": 66,
   "runs_with_exit_change": 0,
   "runs_with_exposure_change": 0,
   "runs_with_time_change": 0,
-  "pct_runs_with_path_change": 100,
+  "pct_runs_with_path_change": 44,
   "pct_runs_with_exit_change": 0
 }
