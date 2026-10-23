@@ -16,6 +16,7 @@
 import http from 'http';
 import fs from 'fs';
 import path from 'path';
+import crypto from 'crypto';
 import { fileURLToPath } from 'url';
 import {
   canonicalRegistryInstance,
@@ -426,12 +427,19 @@ function readJsonBody(req, res, maxBytes = 1048576) {
 
 // ── HTTP Request Server ───────────────────────────────────
 const server = http.createServer(async (req, res) => {
-  // CORS & Security Headers
+  // Request ID Tracing & Correlation
+  const requestId = req.headers['x-request-id'] || crypto.randomUUID();
+  res.setHeader('X-Request-Id', requestId);
+
+  // CORS & Production Security Headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Request-Id');
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+  res.setHeader('Content-Security-Policy', "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self' http: ws: https:;");
 
   if (req.method === 'OPTIONS') {
     res.writeHead(204);
@@ -442,6 +450,24 @@ const server = http.createServer(async (req, res) => {
   const parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   const pathname = parsedUrl.pathname;
   const ip = req.socket.remoteAddress || 'unknown';
+
+  // ── Kubernetes & Cloud Liveness & Readiness Probes ─────────
+  if (pathname === '/livez' && req.method === 'GET') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ status: 'alive', uptime: process.uptime(), timestamp: Date.now() }));
+    return;
+  }
+
+  if (pathname === '/readyz' && req.method === 'GET') {
+    const isReady = canonicalRegistryInstance.getActiveSpaces().length > 0;
+    res.writeHead(isReady ? 200 : 503, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      status: isReady ? 'ready' : 'not_ready',
+      activeBuilding: canonicalRegistryInstance.getActiveBuildingName(),
+      version: canonicalRegistryInstance.getModelVersion()
+    }));
+    return;
+  }
 
   // ── 1. Health Status ────────────────────────────────────
   if ((pathname === '/health' || pathname === '/api/health') && req.method === 'GET') {
@@ -1017,3 +1043,26 @@ server.listen(PORT, () => {
   console.log(`  🏢 Building Model:    ${canonicalRegistryInstance.getActiveBuildingName()} (${canonicalRegistryInstance.getModelVersion()})`);
   console.log('================================================================');
 });
+
+// ── Graceful Shutdown Handler (Production Cloud & OS Signaling) ──
+function gracefulShutdown(signal) {
+  console.log(`\n[Server] Received ${signal}. Flushing state and initiating graceful shutdown...`);
+  try {
+    semanticMemory.saveToDisk();
+  } catch (err) {
+    console.error('[Server] Error saving semantic memory during shutdown:', err.message);
+  }
+
+  server.close(() => {
+    console.log('[Server] Closed all active HTTP socket connections. Exiting process safely.');
+    process.exit(0);
+  });
+
+  setTimeout(() => {
+    console.warn('[Server] Forcing shutdown after 5000ms timeout.');
+    process.exit(0);
+  }, 5000).unref();
+}
+
+process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+process.on('SIGINT', () => gracefulShutdown('SIGINT'));

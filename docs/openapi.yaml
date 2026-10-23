@@ -1,0 +1,177 @@
+openapi: 3.0.3
+info:
+  title: AI-Driven Fire Evacuation Digital Twin REST API
+  description: >
+    Production REST API specifications for the Cyber-Physical Emergency Evacuation
+    Digital Twin with Semantic Interoperability Middleware, Deterministic AI Safety
+    Firewall, and Dynamic Graph Routing Engine.
+  version: 2.0.0
+  contact:
+    name: Digital Twin Engineering Team
+    url: https://github.com/Adithyan1809/AI-Driven-Fire-Evacuation-Digital-Twin
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: http://localhost:8080
+    description: Local Standalone Server / Desktop App Gateway
+  - url: http://127.0.0.1:8080
+    description: Local Loopback Gateway
+
+paths:
+  /health:
+    get:
+      summary: Health & Telemetry Status
+      description: Returns core system health, Gemini AI key status, active model, and memory statistics.
+      responses:
+        '200':
+          description: Server operational
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+                  hasGeminiKey:
+                    type: boolean
+                  model:
+                    type: string
+                  memoryStats:
+                    type: object
+                  serverTime:
+                    type: string
+                    format: date-time
+
+  /livez:
+    get:
+      summary: Kubernetes Liveness Probe
+      description: Indicates if the process is alive.
+      responses:
+        '200':
+          description: Process alive
+
+  /readyz:
+    get:
+      summary: Kubernetes Readiness Probe
+      description: Indicates if the canonical building model is loaded and ready for traffic.
+      responses:
+        '200':
+          description: Model loaded and ready
+        '503':
+          description: Server initializing
+
+  /api/buildings:
+    get:
+      summary: List Available Building Topologies
+      description: Returns list of available facilities (Building A, Building B, Building C) and the currently active facility.
+      responses:
+        '200':
+          description: Buildings retrieved successfully
+
+  /api/buildings/switch:
+    post:
+      summary: Hot-Switch Active Building Facility
+      description: Seamlessly transitions the canonical topology, graph, and safety firewall to another building.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - buildingKey
+              properties:
+                buildingKey:
+                  type: string
+                  enum: [BUILDING_A, BUILDING_B, BUILDING_C]
+      responses:
+        '200':
+          description: Building switched successfully
+
+  /api/building:
+    get:
+      summary: Active Building Graph Topology
+      description: Returns canonical spaces, corridors, exits, and graph nodes/edges for visualization.
+      responses:
+        '200':
+          description: Active topology retrieved
+
+  /api/telemetry:
+    post:
+      summary: Ingest Heterogeneous Sensor Telemetry
+      description: Ingests raw telemetry packets from BMS, FAS, or IoT sensors, passing them through the safety firewall.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - source_system
+                - source_entity
+              properties:
+                source_system:
+                  type: string
+                  example: BMS_HVAC
+                source_entity:
+                  type: string
+                  example: TEMP_SENSOR_101
+                reading_type:
+                  type: string
+                  example: temperature
+                raw_value:
+                  type: number
+                  example: 24.5
+                unit:
+                  type: string
+                  example: degC
+                timestamp:
+                  type: integer
+      responses:
+        '200':
+          description: Telemetry accepted
+        '400':
+          description: Security firewall rejection or invalid payload
+
+  /api/semantic/resolve:
+    post:
+      summary: Zero-Shot AI Schema Translation
+      description: Translates heterogeneous sensor terminology into canonical Digital Twin spaces using Gemini AI + Semantic Memory.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - source_system
+                - source_entity
+              properties:
+                source_system:
+                  type: string
+                source_entity:
+                  type: string
+                description:
+                  type: string
+                floor:
+                  type: integer
+      responses:
+        '200':
+          description: Semantic resolution result
+
+  /api/semantic/memory:
+    get:
+      summary: Retrieve Semantic Memory Cache
+      description: Returns the sub-millisecond translation memory cache.
+      responses:
+        '200':
+          description: Memory entries retrieved
+    delete:
+      summary: Clear Semantic Memory Cache
+      description: Purges translation cache entries and flushes disk storage.
+      responses:
+        '200':
+          description: Cache cleared
