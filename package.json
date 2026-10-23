@@ -11,6 +11,7 @@
     "pack:win": "electron-builder --win --dir",
     "dist:win": "electron-builder --win",
     "test": "node tests/run_tests.mjs",
+    "test:desktop": "node tests/test_mega_desktop_app_checker.mjs",
     "test:reset": "node tests/test_hard_reset.mjs",
     "test:fire": "node tests/test_fire_propagation.mjs",
     "test:routing": "node tests/test_deterministic_evacuation.mjs",
